@@ -6,17 +6,24 @@
 //  Copyright © 2017年 CMCC. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "WHAppDelegate.h"
+#import "WHAppDependencies.h"
 
-@interface AppDelegate ()
+@interface WHAppDelegate ()
+
+@property (nonatomic, strong) WHAppDependencies *dependencies;
 
 @end
 
-@implementation AppDelegate
+@implementation WHAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    WHAppDependencies *dependencies = [[WHAppDependencies alloc] init];
+    self.dependencies = dependencies;
+    [self.dependencies addDependenciesInWindow:self.window];
+    
     return YES;
 }
 

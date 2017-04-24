@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		67B8817E1EACC4C300D87FF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B8817D1EACC4C300D87FF6 /* main.m */; };
-		67B881811EACC4C300D87FF6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B881801EACC4C300D87FF6 /* AppDelegate.m */; };
 		67B881841EACC4C300D87FF6 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B881831EACC4C300D87FF6 /* FirstViewController.m */; };
 		67B881871EACC4C300D87FF6 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B881861EACC4C300D87FF6 /* SecondViewController.m */; };
 		67B8818A1EACC4C300D87FF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67B881881EACC4C300D87FF6 /* Main.storyboard */; };
@@ -16,6 +15,16 @@
 		67B8818F1EACC4C300D87FF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67B8818D1EACC4C300D87FF6 /* LaunchScreen.storyboard */; };
 		67B8819A1EACC4C300D87FF6 /* MovieFanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B881991EACC4C300D87FF6 /* MovieFanTests.m */; };
 		67B881A51EACC4C300D87FF6 /* MovieFanUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B881A41EACC4C300D87FF6 /* MovieFanUITests.m */; };
+		67D06CEF1EADA63000B91A86 /* WHMostRecentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D06CEE1EADA63000B91A86 /* WHMostRecentViewController.m */; };
+		67D06CF61EADEE2A00B91A86 /* WHRootWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D06CF51EADEE2A00B91A86 /* WHRootWireframe.m */; };
+		67D06CFA1EADF1C400B91A86 /* MovieFan-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 67D06CF81EADF1C400B91A86 /* MovieFan-Info.plist */; };
+		67D06CFF1EADF1DA00B91A86 /* WHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D06CFC1EADF1DA00B91A86 /* WHAppDelegate.m */; };
+		67D06D001EADF1DA00B91A86 /* WHAppDependencies.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D06CFE1EADF1DA00B91A86 /* WHAppDependencies.m */; };
+		67D06D041EADF42900B91A86 /* WHMostRecentWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D06D031EADF42900B91A86 /* WHMostRecentWireframe.m */; };
+		67D06D071EADF48300B91A86 /* WHMostRecentPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D06D061EADF48300B91A86 /* WHMostRecentPresenter.m */; };
+		77BAF7FB7B332C4C1EB975E3 /* Pods_MovieFanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF4E51E89AB2CB7E78066DC /* Pods_MovieFanTests.framework */; };
+		95AC4170A4D635D18D852780 /* Pods_MovieFan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37806A227D9394A381AC3102 /* Pods_MovieFan.framework */; };
+		E9CA28072C8A500B8F00745C /* Pods_MovieFanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C8F753983977734944D2765 /* Pods_MovieFanUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +45,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C8F753983977734944D2765 /* Pods_MovieFanUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieFanUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1547A848EE38F36443002FB1 /* Pods-MovieFan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieFan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieFan/Pods-MovieFan.debug.xcconfig"; sourceTree = "<group>"; };
+		37806A227D9394A381AC3102 /* Pods_MovieFan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieFan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CF4E51E89AB2CB7E78066DC /* Pods_MovieFanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieFanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46CCDE1589EEB52C31E59A34 /* Pods-MovieFanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieFanUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MovieFanUITests/Pods-MovieFanUITests.release.xcconfig"; sourceTree = "<group>"; };
 		67B881791EACC4C300D87FF6 /* MovieFan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieFan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67B8817D1EACC4C300D87FF6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		67B8817F1EACC4C300D87FF6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		67B881801EACC4C300D87FF6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		67B881821EACC4C300D87FF6 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		67B881831EACC4C300D87FF6 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		67B881851EACC4C300D87FF6 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
@@ -47,13 +59,32 @@
 		67B881891EACC4C300D87FF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		67B8818B1EACC4C300D87FF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67B8818E1EACC4C300D87FF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		67B881901EACC4C300D87FF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67B881951EACC4C300D87FF6 /* MovieFanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieFanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67B881991EACC4C300D87FF6 /* MovieFanTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieFanTests.m; sourceTree = "<group>"; };
 		67B8819B1EACC4C300D87FF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67B881A01EACC4C300D87FF6 /* MovieFanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieFanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67B881A41EACC4C300D87FF6 /* MovieFanUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieFanUITests.m; sourceTree = "<group>"; };
 		67B881A61EACC4C300D87FF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67D06CEC1EADA60E00B91A86 /* WHMostRecentViewInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHMostRecentViewInterface.h; sourceTree = "<group>"; };
+		67D06CED1EADA63000B91A86 /* WHMostRecentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHMostRecentViewController.h; sourceTree = "<group>"; };
+		67D06CEE1EADA63000B91A86 /* WHMostRecentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHMostRecentViewController.m; sourceTree = "<group>"; };
+		67D06CF01EADE7B300B91A86 /* WHMostRecentInteractorIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHMostRecentInteractorIO.h; sourceTree = "<group>"; };
+		67D06CF41EADEE2A00B91A86 /* WHRootWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHRootWireframe.h; sourceTree = "<group>"; };
+		67D06CF51EADEE2A00B91A86 /* WHRootWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHRootWireframe.m; sourceTree = "<group>"; };
+		67D06CF81EADF1C400B91A86 /* MovieFan-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MovieFan-Info.plist"; sourceTree = "<group>"; };
+		67D06CF91EADF1C400B91A86 /* MovieFan-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MovieFan-Prefix.pch"; sourceTree = "<group>"; };
+		67D06CFB1EADF1DA00B91A86 /* WHAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHAppDelegate.h; sourceTree = "<group>"; };
+		67D06CFC1EADF1DA00B91A86 /* WHAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHAppDelegate.m; sourceTree = "<group>"; };
+		67D06CFD1EADF1DA00B91A86 /* WHAppDependencies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHAppDependencies.h; sourceTree = "<group>"; };
+		67D06CFE1EADF1DA00B91A86 /* WHAppDependencies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHAppDependencies.m; sourceTree = "<group>"; };
+		67D06D021EADF42900B91A86 /* WHMostRecentWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHMostRecentWireframe.h; sourceTree = "<group>"; };
+		67D06D031EADF42900B91A86 /* WHMostRecentWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHMostRecentWireframe.m; sourceTree = "<group>"; };
+		67D06D051EADF48300B91A86 /* WHMostRecentPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHMostRecentPresenter.h; sourceTree = "<group>"; };
+		67D06D061EADF48300B91A86 /* WHMostRecentPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHMostRecentPresenter.m; sourceTree = "<group>"; };
+		9AE8898E79060F9A6B09A216 /* Pods-MovieFanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieFanUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieFanUITests/Pods-MovieFanUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A79DDD078DA2FF404978966E /* Pods-MovieFanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieFanTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MovieFanTests/Pods-MovieFanTests.release.xcconfig"; sourceTree = "<group>"; };
+		DB6A1A85099D650474CF52BD /* Pods-MovieFanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieFanTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieFanTests/Pods-MovieFanTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E96EAA67AADC0A0F05B586DA /* Pods-MovieFan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieFan.release.xcconfig"; path = "Pods/Target Support Files/Pods-MovieFan/Pods-MovieFan.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95AC4170A4D635D18D852780 /* Pods_MovieFan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77BAF7FB7B332C4C1EB975E3 /* Pods_MovieFanTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,12 +108,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9CA28072C8A500B8F00745C /* Pods_MovieFanUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		141FE50C34FDD2E76F4EC744 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1547A848EE38F36443002FB1 /* Pods-MovieFan.debug.xcconfig */,
+				E96EAA67AADC0A0F05B586DA /* Pods-MovieFan.release.xcconfig */,
+				DB6A1A85099D650474CF52BD /* Pods-MovieFanTests.debug.xcconfig */,
+				A79DDD078DA2FF404978966E /* Pods-MovieFanTests.release.xcconfig */,
+				9AE8898E79060F9A6B09A216 /* Pods-MovieFanUITests.debug.xcconfig */,
+				46CCDE1589EEB52C31E59A34 /* Pods-MovieFanUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		231D00FE1749768DE6D9A757 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37806A227D9394A381AC3102 /* Pods_MovieFan.framework */,
+				3CF4E51E89AB2CB7E78066DC /* Pods_MovieFanTests.framework */,
+				0C8F753983977734944D2765 /* Pods_MovieFanUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		67B881701EACC4C300D87FF6 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +145,8 @@
 				67B881981EACC4C300D87FF6 /* MovieFanTests */,
 				67B881A31EACC4C300D87FF6 /* MovieFanUITests */,
 				67B8817A1EACC4C300D87FF6 /* Products */,
+				141FE50C34FDD2E76F4EC744 /* Pods */,
+				231D00FE1749768DE6D9A757 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,16 +163,12 @@
 		67B8817B1EACC4C300D87FF6 /* MovieFan */ = {
 			isa = PBXGroup;
 			children = (
-				67B8817F1EACC4C300D87FF6 /* AppDelegate.h */,
-				67B881801EACC4C300D87FF6 /* AppDelegate.m */,
+				67D06CB71EADA57700B91A86 /* Classes */,
 				67B881821EACC4C300D87FF6 /* FirstViewController.h */,
 				67B881831EACC4C300D87FF6 /* FirstViewController.m */,
 				67B881851EACC4C300D87FF6 /* SecondViewController.h */,
 				67B881861EACC4C300D87FF6 /* SecondViewController.m */,
-				67B881881EACC4C300D87FF6 /* Main.storyboard */,
-				67B8818B1EACC4C300D87FF6 /* Assets.xcassets */,
-				67B8818D1EACC4C300D87FF6 /* LaunchScreen.storyboard */,
-				67B881901EACC4C300D87FF6 /* Info.plist */,
+				67D06D011EADF20E00B91A86 /* Resources */,
 				67B8817C1EACC4C300D87FF6 /* Supporting Files */,
 			);
 			path = MovieFan;
@@ -122,6 +177,8 @@
 		67B8817C1EACC4C300D87FF6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				67D06CF81EADF1C400B91A86 /* MovieFan-Info.plist */,
+				67D06CF91EADF1C400B91A86 /* MovieFan-Prefix.pch */,
 				67B8817D1EACC4C300D87FF6 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -145,6 +202,405 @@
 			path = MovieFanUITests;
 			sourceTree = "<group>";
 		};
+		67D06CB71EADA57700B91A86 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				67D06CB81EADA57700B91A86 /* Common */,
+				67D06CBE1EADA57700B91A86 /* Modules */,
+				67D06CFB1EADF1DA00B91A86 /* WHAppDelegate.h */,
+				67D06CFC1EADF1DA00B91A86 /* WHAppDelegate.m */,
+				67D06CFD1EADF1DA00B91A86 /* WHAppDependencies.h */,
+				67D06CFE1EADF1DA00B91A86 /* WHAppDependencies.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		67D06CB81EADA57700B91A86 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				67D06CB91EADA57700B91A86 /* Categories */,
+				67D06CBA1EADA57700B91A86 /* Model */,
+				67D06CBC1EADA57700B91A86 /* Store */,
+				67D06CBD1EADA57700B91A86 /* View */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		67D06CB91EADA57700B91A86 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		67D06CBA1EADA57700B91A86 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		67D06CBC1EADA57700B91A86 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		67D06CBD1EADA57700B91A86 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				67D06CF41EADEE2A00B91A86 /* WHRootWireframe.h */,
+				67D06CF51EADEE2A00B91A86 /* WHRootWireframe.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		67D06CBE1EADA57700B91A86 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				67D06CBF1EADA57700B91A86 /* Detail */,
+				67D06CC91EADA57700B91A86 /* Farorites */,
+				67D06CD31EADA57700B91A86 /* MostRecent */,
+				67D06CDF1EADA57700B91A86 /* MostStarred */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		67D06CBF1EADA57700B91A86 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				67D06CC01EADA57700B91A86 /* Application Logic */,
+				67D06CC41EADA57700B91A86 /* Module Interface */,
+				67D06CC51EADA57700B91A86 /* User Interface */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		67D06CC01EADA57700B91A86 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				67D06CC11EADA57700B91A86 /* Interactor */,
+				67D06CC21EADA57700B91A86 /* Manager */,
+				67D06CC31EADA57700B91A86 /* Model */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		67D06CC11EADA57700B91A86 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		67D06CC21EADA57700B91A86 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		67D06CC31EADA57700B91A86 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		67D06CC41EADA57700B91A86 /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		67D06CC51EADA57700B91A86 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				67D06CC61EADA57700B91A86 /* Presenter */,
+				67D06CC71EADA57700B91A86 /* View */,
+				67D06CC81EADA57700B91A86 /* Wireframe */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		67D06CC61EADA57700B91A86 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		67D06CC71EADA57700B91A86 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		67D06CC81EADA57700B91A86 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		67D06CC91EADA57700B91A86 /* Farorites */ = {
+			isa = PBXGroup;
+			children = (
+				67D06CCA1EADA57700B91A86 /* Application Logic */,
+				67D06CCE1EADA57700B91A86 /* Module Interface */,
+				67D06CCF1EADA57700B91A86 /* User Interface */,
+			);
+			path = Farorites;
+			sourceTree = "<group>";
+		};
+		67D06CCA1EADA57700B91A86 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				67D06CCB1EADA57700B91A86 /* Interactor */,
+				67D06CCC1EADA57700B91A86 /* Manager */,
+				67D06CCD1EADA57700B91A86 /* Model */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		67D06CCB1EADA57700B91A86 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		67D06CCC1EADA57700B91A86 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		67D06CCD1EADA57700B91A86 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		67D06CCE1EADA57700B91A86 /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		67D06CCF1EADA57700B91A86 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				67D06CD01EADA57700B91A86 /* Presenter */,
+				67D06CD11EADA57700B91A86 /* View */,
+				67D06CD21EADA57700B91A86 /* Wireframe */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		67D06CD01EADA57700B91A86 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		67D06CD11EADA57700B91A86 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		67D06CD21EADA57700B91A86 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		67D06CD31EADA57700B91A86 /* MostRecent */ = {
+			isa = PBXGroup;
+			children = (
+				67D06CD41EADA57700B91A86 /* Application Logic */,
+				67D06CDA1EADA57700B91A86 /* Module Interface */,
+				67D06CDB1EADA57700B91A86 /* User Interface */,
+			);
+			path = MostRecent;
+			sourceTree = "<group>";
+		};
+		67D06CD41EADA57700B91A86 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				67D06CD51EADA57700B91A86 /* Interactor */,
+				67D06CD61EADA57700B91A86 /* Manager */,
+				67D06CD91EADA57700B91A86 /* Model */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		67D06CD51EADA57700B91A86 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				67D06CF01EADE7B300B91A86 /* WHMostRecentInteractorIO.h */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		67D06CD61EADA57700B91A86 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		67D06CD91EADA57700B91A86 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		67D06CDA1EADA57700B91A86 /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		67D06CDB1EADA57700B91A86 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				67D06CDC1EADA57700B91A86 /* Presenter */,
+				67D06CDD1EADA57700B91A86 /* View */,
+				67D06CDE1EADA57700B91A86 /* Wireframe */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		67D06CDC1EADA57700B91A86 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				67D06D051EADF48300B91A86 /* WHMostRecentPresenter.h */,
+				67D06D061EADF48300B91A86 /* WHMostRecentPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		67D06CDD1EADA57700B91A86 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				67D06CEC1EADA60E00B91A86 /* WHMostRecentViewInterface.h */,
+				67D06CED1EADA63000B91A86 /* WHMostRecentViewController.h */,
+				67D06CEE1EADA63000B91A86 /* WHMostRecentViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		67D06CDE1EADA57700B91A86 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				67D06D021EADF42900B91A86 /* WHMostRecentWireframe.h */,
+				67D06D031EADF42900B91A86 /* WHMostRecentWireframe.m */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		67D06CDF1EADA57700B91A86 /* MostStarred */ = {
+			isa = PBXGroup;
+			children = (
+				67D06CE01EADA57700B91A86 /* Application Logic */,
+				67D06CE41EADA57700B91A86 /* Module Interface */,
+				67D06CE51EADA57700B91A86 /* User Interface */,
+			);
+			path = MostStarred;
+			sourceTree = "<group>";
+		};
+		67D06CE01EADA57700B91A86 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				67D06CE11EADA57700B91A86 /* Interactor */,
+				67D06CE21EADA57700B91A86 /* Manager */,
+				67D06CE31EADA57700B91A86 /* Model */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		67D06CE11EADA57700B91A86 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		67D06CE21EADA57700B91A86 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		67D06CE31EADA57700B91A86 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		67D06CE41EADA57700B91A86 /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		67D06CE51EADA57700B91A86 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				67D06CE61EADA57700B91A86 /* Presenter */,
+				67D06CE71EADA57700B91A86 /* View */,
+				67D06CE81EADA57700B91A86 /* Wireframe */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		67D06CE61EADA57700B91A86 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		67D06CE71EADA57700B91A86 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		67D06CE81EADA57700B91A86 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		67D06D011EADF20E00B91A86 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				67B881881EACC4C300D87FF6 /* Main.storyboard */,
+				67B8818B1EACC4C300D87FF6 /* Assets.xcassets */,
+				67B8818D1EACC4C300D87FF6 /* LaunchScreen.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,9 +608,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 67B881A91EACC4C300D87FF6 /* Build configuration list for PBXNativeTarget "MovieFan" */;
 			buildPhases = (
+				9A1D3D689FE6C820363B0E3D /* [CP] Check Pods Manifest.lock */,
 				67B881751EACC4C300D87FF6 /* Sources */,
 				67B881761EACC4C300D87FF6 /* Frameworks */,
 				67B881771EACC4C300D87FF6 /* Resources */,
+				83584C5A5CDB15E93C2AC8E3 /* [CP] Embed Pods Frameworks */,
+				C3DFB1905778F27F4DAA0797 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -169,9 +628,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 67B881AC1EACC4C300D87FF6 /* Build configuration list for PBXNativeTarget "MovieFanTests" */;
 			buildPhases = (
+				6303004CEE3BD95867FE0319 /* [CP] Check Pods Manifest.lock */,
 				67B881911EACC4C300D87FF6 /* Sources */,
 				67B881921EACC4C300D87FF6 /* Frameworks */,
 				67B881931EACC4C300D87FF6 /* Resources */,
+				C0F5005E05AA67F4B06191C3 /* [CP] Embed Pods Frameworks */,
+				86B8194A144A23A49B5CAA34 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -187,9 +649,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 67B881AF1EACC4C300D87FF6 /* Build configuration list for PBXNativeTarget "MovieFanUITests" */;
 			buildPhases = (
+				E47DE410A43BD55FD2B61FF4 /* [CP] Check Pods Manifest.lock */,
 				67B8819C1EACC4C300D87FF6 /* Sources */,
 				67B8819D1EACC4C300D87FF6 /* Frameworks */,
 				67B8819E1EACC4C300D87FF6 /* Resources */,
+				14730F1D47E0E9926846B730 /* [CP] Embed Pods Frameworks */,
+				429D6499176C2E3A5843EB5C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,6 +722,7 @@
 				67B8818F1EACC4C300D87FF6 /* LaunchScreen.storyboard in Resources */,
 				67B8818C1EACC4C300D87FF6 /* Assets.xcassets in Resources */,
 				67B8818A1EACC4C300D87FF6 /* Main.storyboard in Resources */,
+				67D06CFA1EADF1C400B91A86 /* MovieFan-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,15 +742,158 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14730F1D47E0E9926846B730 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MovieFanUITests/Pods-MovieFanUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		429D6499176C2E3A5843EB5C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MovieFanUITests/Pods-MovieFanUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6303004CEE3BD95867FE0319 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		83584C5A5CDB15E93C2AC8E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MovieFan/Pods-MovieFan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86B8194A144A23A49B5CAA34 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MovieFanTests/Pods-MovieFanTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A1D3D689FE6C820363B0E3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C0F5005E05AA67F4B06191C3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MovieFanTests/Pods-MovieFanTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3DFB1905778F27F4DAA0797 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MovieFan/Pods-MovieFan-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E47DE410A43BD55FD2B61FF4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		67B881751EACC4C300D87FF6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67D06CEF1EADA63000B91A86 /* WHMostRecentViewController.m in Sources */,
 				67B881871EACC4C300D87FF6 /* SecondViewController.m in Sources */,
-				67B881811EACC4C300D87FF6 /* AppDelegate.m in Sources */,
+				67D06CF61EADEE2A00B91A86 /* WHRootWireframe.m in Sources */,
+				67D06CFF1EADF1DA00B91A86 /* WHAppDelegate.m in Sources */,
 				67B881841EACC4C300D87FF6 /* FirstViewController.m in Sources */,
 				67B8817E1EACC4C300D87FF6 /* main.m in Sources */,
+				67D06D001EADF1DA00B91A86 /* WHAppDependencies.m in Sources */,
+				67D06D071EADF48300B91A86 /* WHMostRecentPresenter.m in Sources */,
+				67D06D041EADF42900B91A86 /* WHMostRecentWireframe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,10 +1038,12 @@
 		};
 		67B881AA1EACC4C300D87FF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1547A848EE38F36443002FB1 /* Pods-MovieFan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 777LHWYBNZ;
-				INFOPLIST_FILE = MovieFan/Info.plist;
+				GCC_PREFIX_HEADER = "MovieFan/MovieFan-Prefix.pch";
+				INFOPLIST_FILE = "MovieFan/MovieFan-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cmcc.MovieFan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,10 +1052,12 @@
 		};
 		67B881AB1EACC4C300D87FF6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E96EAA67AADC0A0F05B586DA /* Pods-MovieFan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 777LHWYBNZ;
-				INFOPLIST_FILE = MovieFan/Info.plist;
+				GCC_PREFIX_HEADER = "MovieFan/MovieFan-Prefix.pch";
+				INFOPLIST_FILE = "MovieFan/MovieFan-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cmcc.MovieFan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -453,6 +1066,7 @@
 		};
 		67B881AD1EACC4C300D87FF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB6A1A85099D650474CF52BD /* Pods-MovieFanTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 777LHWYBNZ;
@@ -466,6 +1080,7 @@
 		};
 		67B881AE1EACC4C300D87FF6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A79DDD078DA2FF404978966E /* Pods-MovieFanTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 777LHWYBNZ;
@@ -479,6 +1094,7 @@
 		};
 		67B881B01EACC4C300D87FF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AE8898E79060F9A6B09A216 /* Pods-MovieFanUITests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 777LHWYBNZ;
 				INFOPLIST_FILE = MovieFanUITests/Info.plist;
@@ -491,6 +1107,7 @@
 		};
 		67B881B11EACC4C300D87FF6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46CCDE1589EEB52C31E59A34 /* Pods-MovieFanUITests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 777LHWYBNZ;
 				INFOPLIST_FILE = MovieFanUITests/Info.plist;
@@ -520,6 +1137,7 @@
 				67B881AB1EACC4C300D87FF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		67B881AC1EACC4C300D87FF6 /* Build configuration list for PBXNativeTarget "MovieFanTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +1146,7 @@
 				67B881AE1EACC4C300D87FF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		67B881AF1EACC4C300D87FF6 /* Build configuration list for PBXNativeTarget "MovieFanUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +1155,7 @@
 				67B881B11EACC4C300D87FF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
