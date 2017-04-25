@@ -1,5 +1,5 @@
 //
-//  WHMostRecentViewController.h
+//  WHMostRecentViewControllerTableViewController.h
 //  MovieFan
 //
 //  Created by Faye on 2017/4/24.
@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "WHMostRecentViewInterface.h"
 
-@interface WHMostRecentViewController : UIViewController<WHMostRecentViewInterface>
-
+@interface WHMostRecentViewController : UITableViewController
 
 @end

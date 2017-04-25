@@ -8,20 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		67B8817E1EACC4C300D87FF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B8817D1EACC4C300D87FF6 /* main.m */; };
-		67B881841EACC4C300D87FF6 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B881831EACC4C300D87FF6 /* FirstViewController.m */; };
 		67B881871EACC4C300D87FF6 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B881861EACC4C300D87FF6 /* SecondViewController.m */; };
-		67B8818A1EACC4C300D87FF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67B881881EACC4C300D87FF6 /* Main.storyboard */; };
 		67B8818C1EACC4C300D87FF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67B8818B1EACC4C300D87FF6 /* Assets.xcassets */; };
-		67B8818F1EACC4C300D87FF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67B8818D1EACC4C300D87FF6 /* LaunchScreen.storyboard */; };
 		67B8819A1EACC4C300D87FF6 /* MovieFanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B881991EACC4C300D87FF6 /* MovieFanTests.m */; };
 		67B881A51EACC4C300D87FF6 /* MovieFanUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B881A41EACC4C300D87FF6 /* MovieFanUITests.m */; };
-		67D06CEF1EADA63000B91A86 /* WHMostRecentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D06CEE1EADA63000B91A86 /* WHMostRecentViewController.m */; };
 		67D06CF61EADEE2A00B91A86 /* WHRootWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D06CF51EADEE2A00B91A86 /* WHRootWireframe.m */; };
 		67D06CFA1EADF1C400B91A86 /* MovieFan-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 67D06CF81EADF1C400B91A86 /* MovieFan-Info.plist */; };
 		67D06CFF1EADF1DA00B91A86 /* WHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D06CFC1EADF1DA00B91A86 /* WHAppDelegate.m */; };
 		67D06D001EADF1DA00B91A86 /* WHAppDependencies.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D06CFE1EADF1DA00B91A86 /* WHAppDependencies.m */; };
 		67D06D041EADF42900B91A86 /* WHMostRecentWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D06D031EADF42900B91A86 /* WHMostRecentWireframe.m */; };
 		67D06D071EADF48300B91A86 /* WHMostRecentPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D06D061EADF48300B91A86 /* WHMostRecentPresenter.m */; };
+		67D06D0A1EADF72600B91A86 /* WHMostRecentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D06D091EADF72600B91A86 /* WHMostRecentViewController.m */; };
+		67D06D0B1EADF90000B91A86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67B881881EACC4C300D87FF6 /* Main.storyboard */; };
+		67D06D0C1EADF90000B91A86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67B8818D1EACC4C300D87FF6 /* LaunchScreen.storyboard */; };
+		67D06D0F1EADFCEB00B91A86 /* WHMostRecentDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D06D0E1EADFCEB00B91A86 /* WHMostRecentDataManager.m */; };
+		67D06D121EAEE8C200B91A86 /* WHMovieInThreaterRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D06D111EAEE8C200B91A86 /* WHMovieInThreaterRequest.m */; };
 		77BAF7FB7B332C4C1EB975E3 /* Pods_MovieFanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF4E51E89AB2CB7E78066DC /* Pods_MovieFanTests.framework */; };
 		95AC4170A4D635D18D852780 /* Pods_MovieFan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37806A227D9394A381AC3102 /* Pods_MovieFan.framework */; };
 		E9CA28072C8A500B8F00745C /* Pods_MovieFanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C8F753983977734944D2765 /* Pods_MovieFanUITests.framework */; };
@@ -52,8 +53,6 @@
 		46CCDE1589EEB52C31E59A34 /* Pods-MovieFanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieFanUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MovieFanUITests/Pods-MovieFanUITests.release.xcconfig"; sourceTree = "<group>"; };
 		67B881791EACC4C300D87FF6 /* MovieFan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieFan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67B8817D1EACC4C300D87FF6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		67B881821EACC4C300D87FF6 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		67B881831EACC4C300D87FF6 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		67B881851EACC4C300D87FF6 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		67B881861EACC4C300D87FF6 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		67B881891EACC4C300D87FF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -66,8 +65,6 @@
 		67B881A41EACC4C300D87FF6 /* MovieFanUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieFanUITests.m; sourceTree = "<group>"; };
 		67B881A61EACC4C300D87FF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67D06CEC1EADA60E00B91A86 /* WHMostRecentViewInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHMostRecentViewInterface.h; sourceTree = "<group>"; };
-		67D06CED1EADA63000B91A86 /* WHMostRecentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHMostRecentViewController.h; sourceTree = "<group>"; };
-		67D06CEE1EADA63000B91A86 /* WHMostRecentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHMostRecentViewController.m; sourceTree = "<group>"; };
 		67D06CF01EADE7B300B91A86 /* WHMostRecentInteractorIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHMostRecentInteractorIO.h; sourceTree = "<group>"; };
 		67D06CF41EADEE2A00B91A86 /* WHRootWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHRootWireframe.h; sourceTree = "<group>"; };
 		67D06CF51EADEE2A00B91A86 /* WHRootWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHRootWireframe.m; sourceTree = "<group>"; };
@@ -81,6 +78,12 @@
 		67D06D031EADF42900B91A86 /* WHMostRecentWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHMostRecentWireframe.m; sourceTree = "<group>"; };
 		67D06D051EADF48300B91A86 /* WHMostRecentPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHMostRecentPresenter.h; sourceTree = "<group>"; };
 		67D06D061EADF48300B91A86 /* WHMostRecentPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHMostRecentPresenter.m; sourceTree = "<group>"; };
+		67D06D081EADF72600B91A86 /* WHMostRecentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHMostRecentViewController.h; sourceTree = "<group>"; };
+		67D06D091EADF72600B91A86 /* WHMostRecentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHMostRecentViewController.m; sourceTree = "<group>"; };
+		67D06D0D1EADFCEB00B91A86 /* WHMostRecentDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHMostRecentDataManager.h; sourceTree = "<group>"; };
+		67D06D0E1EADFCEB00B91A86 /* WHMostRecentDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHMostRecentDataManager.m; sourceTree = "<group>"; };
+		67D06D101EAEE8C200B91A86 /* WHMovieInThreaterRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHMovieInThreaterRequest.h; sourceTree = "<group>"; };
+		67D06D111EAEE8C200B91A86 /* WHMovieInThreaterRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHMovieInThreaterRequest.m; sourceTree = "<group>"; };
 		9AE8898E79060F9A6B09A216 /* Pods-MovieFanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieFanUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieFanUITests/Pods-MovieFanUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A79DDD078DA2FF404978966E /* Pods-MovieFanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieFanTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MovieFanTests/Pods-MovieFanTests.release.xcconfig"; sourceTree = "<group>"; };
 		DB6A1A85099D650474CF52BD /* Pods-MovieFanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieFanTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieFanTests/Pods-MovieFanTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -164,8 +167,6 @@
 			isa = PBXGroup;
 			children = (
 				67D06CB71EADA57700B91A86 /* Classes */,
-				67B881821EACC4C300D87FF6 /* FirstViewController.h */,
-				67B881831EACC4C300D87FF6 /* FirstViewController.m */,
 				67B881851EACC4C300D87FF6 /* SecondViewController.h */,
 				67B881861EACC4C300D87FF6 /* SecondViewController.m */,
 				67D06D011EADF20E00B91A86 /* Resources */,
@@ -456,6 +457,10 @@
 		67D06CD61EADA57700B91A86 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				67D06D0D1EADFCEB00B91A86 /* WHMostRecentDataManager.h */,
+				67D06D0E1EADFCEB00B91A86 /* WHMostRecentDataManager.m */,
+				67D06D101EAEE8C200B91A86 /* WHMovieInThreaterRequest.h */,
+				67D06D111EAEE8C200B91A86 /* WHMovieInThreaterRequest.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -497,8 +502,8 @@
 			isa = PBXGroup;
 			children = (
 				67D06CEC1EADA60E00B91A86 /* WHMostRecentViewInterface.h */,
-				67D06CED1EADA63000B91A86 /* WHMostRecentViewController.h */,
-				67D06CEE1EADA63000B91A86 /* WHMostRecentViewController.m */,
+				67D06D081EADF72600B91A86 /* WHMostRecentViewController.h */,
+				67D06D091EADF72600B91A86 /* WHMostRecentViewController.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -719,9 +724,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67B8818F1EACC4C300D87FF6 /* LaunchScreen.storyboard in Resources */,
+				67D06D0B1EADF90000B91A86 /* Main.storyboard in Resources */,
+				67D06D0C1EADF90000B91A86 /* LaunchScreen.storyboard in Resources */,
 				67B8818C1EACC4C300D87FF6 /* Assets.xcassets in Resources */,
-				67B8818A1EACC4C300D87FF6 /* Main.storyboard in Resources */,
 				67D06CFA1EADF1C400B91A86 /* MovieFan-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -885,15 +890,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67D06CEF1EADA63000B91A86 /* WHMostRecentViewController.m in Sources */,
+				67D06D0A1EADF72600B91A86 /* WHMostRecentViewController.m in Sources */,
 				67B881871EACC4C300D87FF6 /* SecondViewController.m in Sources */,
 				67D06CF61EADEE2A00B91A86 /* WHRootWireframe.m in Sources */,
 				67D06CFF1EADF1DA00B91A86 /* WHAppDelegate.m in Sources */,
-				67B881841EACC4C300D87FF6 /* FirstViewController.m in Sources */,
 				67B8817E1EACC4C300D87FF6 /* main.m in Sources */,
 				67D06D001EADF1DA00B91A86 /* WHAppDependencies.m in Sources */,
 				67D06D071EADF48300B91A86 /* WHMostRecentPresenter.m in Sources */,
+				67D06D0F1EADFCEB00B91A86 /* WHMostRecentDataManager.m in Sources */,
 				67D06D041EADF42900B91A86 /* WHMostRecentWireframe.m in Sources */,
+				67D06D121EAEE8C200B91A86 /* WHMovieInThreaterRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

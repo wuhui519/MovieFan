@@ -9,6 +9,9 @@
 #import "WHAppDelegate.h"
 #import "WHAppDependencies.h"
 
+// test
+#import "WHMovieInThreaterRequest.h"
+
 @interface WHAppDelegate ()
 
 @property (nonatomic, strong) WHAppDependencies *dependencies;
@@ -23,6 +26,11 @@
     WHAppDependencies *dependencies = [[WHAppDependencies alloc] init];
     self.dependencies = dependencies;
     [self.dependencies addDependenciesInWindow:self.window];
+    
+    // test
+    
+    WHMovieInThreaterRequest *r = [[WHMovieInThreaterRequest alloc] init];
+    [r startRequest];
     
     return YES;
 }
