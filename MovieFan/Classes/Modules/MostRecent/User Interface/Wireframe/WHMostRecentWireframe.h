@@ -7,15 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "WHMostRecentPresenter.h"
 #import "WHRootWireframe.h"
+
+@class WHMostRecentPresenter;
+@class WHMostRecentViewController;
 
 @interface WHMostRecentWireframe : NSObject
 
 //@property (nonatomic, strong) WHMovieDetailWireframe *detailWireframe;
-@property (nonatomic, strong) WHMostRecentPresenter *mostRecentPresenter;
+@property (nonatomic, strong) WHMostRecentPresenter *recentPresenter;
 @property (nonatomic, strong) WHRootWireframe *rootWireframe;
 
+- (void)presentSelfInterfaceWithVC:(WHMostRecentViewController *)viewController;
 - (void)presentDetailInterface;
 
 @end

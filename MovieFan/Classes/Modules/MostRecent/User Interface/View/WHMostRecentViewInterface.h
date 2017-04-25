@@ -8,10 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+@class WHMostRecentMovies;
+
 @protocol WHMostRecentViewInterface <NSObject>
 
 - (void)showNoContentMessage;
-//- (void)showUpcomingDisplayData:(VTDUpcomingDisplayData *)data;
+- (void)showMostRecentDisplayData:(WHMostRecentMovies *)data;
 - (void)reloadEntries;
 
 @end

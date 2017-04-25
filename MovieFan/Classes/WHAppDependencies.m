@@ -8,22 +8,31 @@
 
 #import "WHAppDependencies.h"
 #import "WHRootWireframe.h"
+#import "WHRealmDataStore.h"
+#import "WHMostRecentWireframe.h"
+#import "WHMostRecentPresenter.h"
+#import "WHMostRecentInteractor.h"
+#import "WHMostRecentDataManager.h"
+#import "WHMostRecentViewController.h"
+
+@interface WHAppDependencies ()<UITabBarControllerDelegate>
+
+@property (nonatomic, strong) WHMostRecentWireframe *recentWireframe;
+
+@end
 
 @implementation WHAppDependencies
 
 - (void)addDependenciesInWindow:(UIWindow *)window {
     // Root Level Classes
     WHRootWireframe *rootWireframe = [[WHRootWireframe alloc] initWithWindow:window];
+    WHRealmDataStore *dataStore = [[WHRealmDataStore alloc] init];
     
-//    VTDCoreDataStore *dataStore = [[VTDCoreDataStore alloc] init];
-//    id<VTDClock> clock = [[VTDDeviceClock alloc] init];
-//    VTDRootWireframe *rootWireframe = [[VTDRootWireframe alloc] init];
-    
-    // List Modules Classes
-//    VTDListWireframe *listWireframe = [[VTDListWireframe alloc] init];
-//    VTDListPresenter *listPresenter = [[VTDListPresenter alloc] init];
-//    VTDListDataManager *listDataManager = [[VTDListDataManager alloc] init];
-//    VTDListInteractor *listInteractor = [[VTDListInteractor alloc] initWithDataManager:listDataManager clock:clock];
+    // MostRecent Modules Classes
+    WHMostRecentWireframe *recentWireframe = [[WHMostRecentWireframe alloc] init];
+    WHMostRecentPresenter *recentPresenter = [[WHMostRecentPresenter alloc] init];
+    WHMostRecentDataManager *recentDataManager = [[WHMostRecentDataManager alloc] init];
+    WHMostRecentInteractor *recentInteractor = [[WHMostRecentInteractor alloc] initWithDataManager:recentDataManager];
     
     // Add Module Classes
 //    VTDAddWireframe *addWireframe = [[VTDAddWireframe alloc] init];
@@ -31,18 +40,18 @@
 //    VTDAddPresenter *addPresenter = [[VTDAddPresenter alloc] init];
 //    VTDAddDataManager *addDataManager = [[VTDAddDataManager alloc] init];
     
-    // List Module Classes
-//    listInteractor.output = listPresenter;
-//    
-//    listPresenter.listInteractor = listInteractor;
-//    listPresenter.listWireframe = listWireframe;
-//    
-//    listWireframe.addWireframe = addWireframe;
-//    listWireframe.listPresenter = listPresenter;
-//    listWireframe.rootWireframe = rootWireframe;
-//    self.listWireframe = listWireframe;
+    // MostRecent Module Classes
+    recentInteractor.output = recentPresenter;
     
-//    listDataManager.dataStore = dataStore;
+    recentPresenter.recentInteractor = recentInteractor;
+    recentPresenter.recentWireframe = recentWireframe;
+    
+//    recentWireframe.detailWireframe = detailWireframe;
+    recentWireframe.recentPresenter = recentPresenter;
+    recentWireframe.rootWireframe = rootWireframe;
+    self.recentWireframe = recentWireframe;
+    
+    recentDataManager.dataStore = dataStore;
     
     // Add Module Classes
 //    addInteractor.addDataManager = addDataManager;
@@ -55,6 +64,20 @@
 //    addPresenter.addModuleDelegate = listPresenter;
 //    
 //    addDataManager.dataStore = dataStore;
+    
+    UITabBarController *tabBarController = (UITabBarController *)window.rootViewController;
+    tabBarController.delegate = self;
+    [self tabBarController:tabBarController didSelectViewController:tabBarController.viewControllers[0]];
+}
+
+#pragma mark - tabbar
+
+- (void)tabBarController:(UITabBarController *)tabBarController
+ didSelectViewController:(UIViewController *)viewController {
+    UIViewController *rootVC = ((UINavigationController *)viewController).viewControllers[0];
+    if ([rootVC isKindOfClass:[WHMostRecentViewController class]]) {
+        [self.recentWireframe presentSelfInterfaceWithVC:(WHMostRecentViewController *)rootVC];
+    }
 }
 
 @end

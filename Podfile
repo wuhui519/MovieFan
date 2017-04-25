@@ -9,8 +9,9 @@ target 'MovieFan' do
     pod 'AFNetworking', '~> 3.0'
     pod 'Masonry'
     pod 'YYKit'
-    pod "PromiseKit", "~> 4.0"
-    pod 'Realm' 
+    pod 'Realm'
+    pod 'MJRefresh'
+    pod 'SVProgressHUD'
 
   target 'MovieFanTests' do
     inherit! :search_paths

@@ -10,4 +10,21 @@
 
 @implementation WHMostRecentPresenter
 
+- (void)updateView {
+    [self.recentInteractor findMostRecentItems];
+}
+
+#pragma mark - List Interactor Output
+
+- (void)foundMostRecentItems:(WHMostRecentMovies *)mostRecentItems {
+    if ([mostRecentItems.subjects count] == 0)
+    {
+        [self.userInterface showNoContentMessage];
+    }
+    else
+    {
+        [self.userInterface showMostRecentDisplayData:mostRecentItems];
+    }
+}
+
 @end

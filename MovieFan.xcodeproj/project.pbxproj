@@ -23,6 +23,14 @@
 		67D06D0C1EADF90000B91A86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67B8818D1EACC4C300D87FF6 /* LaunchScreen.storyboard */; };
 		67D06D0F1EADFCEB00B91A86 /* WHMostRecentDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D06D0E1EADFCEB00B91A86 /* WHMostRecentDataManager.m */; };
 		67D06D121EAEE8C200B91A86 /* WHMovieInThreaterRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D06D111EAEE8C200B91A86 /* WHMovieInThreaterRequest.m */; };
+		67D06D151EAEF9FC00B91A86 /* WHRanking.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D06D141EAEF9FC00B91A86 /* WHRanking.m */; };
+		67D06D181EAF0EAC00B91A86 /* WHImages.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D06D171EAF0EAC00B91A86 /* WHImages.m */; };
+		67D06D1B1EAF113000B91A86 /* WHMovieSubject.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D06D1A1EAF113000B91A86 /* WHMovieSubject.m */; };
+		67D06D1E1EAF136E00B91A86 /* WHCelebrity.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D06D1D1EAF136E00B91A86 /* WHCelebrity.m */; };
+		67D06D211EAF16DB00B91A86 /* WHMostRecentMovies.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D06D201EAF16DB00B91A86 /* WHMostRecentMovies.m */; };
+		67D06D241EAF212B00B91A86 /* WHMostRecentInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D06D231EAF212B00B91A86 /* WHMostRecentInteractor.m */; };
+		67D06D271EAF22BD00B91A86 /* NSArray+HOM.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D06D261EAF22BD00B91A86 /* NSArray+HOM.m */; };
+		67D06D2C1EAF251A00B91A86 /* WHRealmDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D06D2B1EAF251A00B91A86 /* WHRealmDataStore.m */; };
 		77BAF7FB7B332C4C1EB975E3 /* Pods_MovieFanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF4E51E89AB2CB7E78066DC /* Pods_MovieFanTests.framework */; };
 		95AC4170A4D635D18D852780 /* Pods_MovieFan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37806A227D9394A381AC3102 /* Pods_MovieFan.framework */; };
 		E9CA28072C8A500B8F00745C /* Pods_MovieFanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C8F753983977734944D2765 /* Pods_MovieFanUITests.framework */; };
@@ -84,6 +92,24 @@
 		67D06D0E1EADFCEB00B91A86 /* WHMostRecentDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHMostRecentDataManager.m; sourceTree = "<group>"; };
 		67D06D101EAEE8C200B91A86 /* WHMovieInThreaterRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHMovieInThreaterRequest.h; sourceTree = "<group>"; };
 		67D06D111EAEE8C200B91A86 /* WHMovieInThreaterRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHMovieInThreaterRequest.m; sourceTree = "<group>"; };
+		67D06D131EAEF9FC00B91A86 /* WHRanking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHRanking.h; sourceTree = "<group>"; };
+		67D06D141EAEF9FC00B91A86 /* WHRanking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHRanking.m; sourceTree = "<group>"; };
+		67D06D161EAF0EAC00B91A86 /* WHImages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHImages.h; sourceTree = "<group>"; };
+		67D06D171EAF0EAC00B91A86 /* WHImages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHImages.m; sourceTree = "<group>"; };
+		67D06D191EAF113000B91A86 /* WHMovieSubject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHMovieSubject.h; sourceTree = "<group>"; };
+		67D06D1A1EAF113000B91A86 /* WHMovieSubject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHMovieSubject.m; sourceTree = "<group>"; };
+		67D06D1C1EAF136E00B91A86 /* WHCelebrity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHCelebrity.h; sourceTree = "<group>"; };
+		67D06D1D1EAF136E00B91A86 /* WHCelebrity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHCelebrity.m; sourceTree = "<group>"; };
+		67D06D1F1EAF16DB00B91A86 /* WHMostRecentMovies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHMostRecentMovies.h; sourceTree = "<group>"; };
+		67D06D201EAF16DB00B91A86 /* WHMostRecentMovies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHMostRecentMovies.m; sourceTree = "<group>"; };
+		67D06D221EAF212B00B91A86 /* WHMostRecentInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHMostRecentInteractor.h; sourceTree = "<group>"; };
+		67D06D231EAF212B00B91A86 /* WHMostRecentInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHMostRecentInteractor.m; sourceTree = "<group>"; };
+		67D06D251EAF22BD00B91A86 /* NSArray+HOM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+HOM.h"; sourceTree = "<group>"; };
+		67D06D261EAF22BD00B91A86 /* NSArray+HOM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+HOM.m"; sourceTree = "<group>"; };
+		67D06D291EAF249E00B91A86 /* WHAppMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHAppMacro.h; sourceTree = "<group>"; };
+		67D06D2A1EAF251A00B91A86 /* WHRealmDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHRealmDataStore.h; sourceTree = "<group>"; };
+		67D06D2B1EAF251A00B91A86 /* WHRealmDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHRealmDataStore.m; sourceTree = "<group>"; };
+		67D06D2D1EAF361D00B91A86 /* WHMostRecentModuleInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHMostRecentModuleInterface.h; sourceTree = "<group>"; };
 		9AE8898E79060F9A6B09A216 /* Pods-MovieFanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieFanUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieFanUITests/Pods-MovieFanUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A79DDD078DA2FF404978966E /* Pods-MovieFanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieFanTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MovieFanTests/Pods-MovieFanTests.release.xcconfig"; sourceTree = "<group>"; };
 		DB6A1A85099D650474CF52BD /* Pods-MovieFanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieFanTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieFanTests/Pods-MovieFanTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -223,6 +249,7 @@
 				67D06CBA1EADA57700B91A86 /* Model */,
 				67D06CBC1EADA57700B91A86 /* Store */,
 				67D06CBD1EADA57700B91A86 /* View */,
+				67D06D291EAF249E00B91A86 /* WHAppMacro.h */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -230,6 +257,8 @@
 		67D06CB91EADA57700B91A86 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				67D06D251EAF22BD00B91A86 /* NSArray+HOM.h */,
+				67D06D261EAF22BD00B91A86 /* NSArray+HOM.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -237,6 +266,14 @@
 		67D06CBA1EADA57700B91A86 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				67D06D131EAEF9FC00B91A86 /* WHRanking.h */,
+				67D06D141EAEF9FC00B91A86 /* WHRanking.m */,
+				67D06D161EAF0EAC00B91A86 /* WHImages.h */,
+				67D06D171EAF0EAC00B91A86 /* WHImages.m */,
+				67D06D191EAF113000B91A86 /* WHMovieSubject.h */,
+				67D06D1A1EAF113000B91A86 /* WHMovieSubject.m */,
+				67D06D1C1EAF136E00B91A86 /* WHCelebrity.h */,
+				67D06D1D1EAF136E00B91A86 /* WHCelebrity.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -244,6 +281,8 @@
 		67D06CBC1EADA57700B91A86 /* Store */ = {
 			isa = PBXGroup;
 			children = (
+				67D06D2A1EAF251A00B91A86 /* WHRealmDataStore.h */,
+				67D06D2B1EAF251A00B91A86 /* WHRealmDataStore.m */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -450,6 +489,8 @@
 			isa = PBXGroup;
 			children = (
 				67D06CF01EADE7B300B91A86 /* WHMostRecentInteractorIO.h */,
+				67D06D221EAF212B00B91A86 /* WHMostRecentInteractor.h */,
+				67D06D231EAF212B00B91A86 /* WHMostRecentInteractor.m */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -468,6 +509,8 @@
 		67D06CD91EADA57700B91A86 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				67D06D1F1EAF16DB00B91A86 /* WHMostRecentMovies.h */,
+				67D06D201EAF16DB00B91A86 /* WHMostRecentMovies.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -475,6 +518,7 @@
 		67D06CDA1EADA57700B91A86 /* Module Interface */ = {
 			isa = PBXGroup;
 			children = (
+				67D06D2D1EAF361D00B91A86 /* WHMostRecentModuleInterface.h */,
 			);
 			path = "Module Interface";
 			sourceTree = "<group>";
@@ -890,7 +934,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67D06D211EAF16DB00B91A86 /* WHMostRecentMovies.m in Sources */,
+				67D06D241EAF212B00B91A86 /* WHMostRecentInteractor.m in Sources */,
+				67D06D1E1EAF136E00B91A86 /* WHCelebrity.m in Sources */,
+				67D06D271EAF22BD00B91A86 /* NSArray+HOM.m in Sources */,
 				67D06D0A1EADF72600B91A86 /* WHMostRecentViewController.m in Sources */,
+				67D06D151EAEF9FC00B91A86 /* WHRanking.m in Sources */,
+				67D06D181EAF0EAC00B91A86 /* WHImages.m in Sources */,
 				67B881871EACC4C300D87FF6 /* SecondViewController.m in Sources */,
 				67D06CF61EADEE2A00B91A86 /* WHRootWireframe.m in Sources */,
 				67D06CFF1EADF1DA00B91A86 /* WHAppDelegate.m in Sources */,
@@ -898,7 +948,9 @@
 				67D06D001EADF1DA00B91A86 /* WHAppDependencies.m in Sources */,
 				67D06D071EADF48300B91A86 /* WHMostRecentPresenter.m in Sources */,
 				67D06D0F1EADFCEB00B91A86 /* WHMostRecentDataManager.m in Sources */,
+				67D06D1B1EAF113000B91A86 /* WHMovieSubject.m in Sources */,
 				67D06D041EADF42900B91A86 /* WHMostRecentWireframe.m in Sources */,
+				67D06D2C1EAF251A00B91A86 /* WHRealmDataStore.m in Sources */,
 				67D06D121EAEE8C200B91A86 /* WHMovieInThreaterRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

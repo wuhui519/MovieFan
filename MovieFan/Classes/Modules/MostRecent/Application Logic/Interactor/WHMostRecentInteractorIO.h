@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "WHMostRecentMovies.h"
 
 @protocol WHMostRecentInteractorInput <NSObject>
 
@@ -15,8 +16,8 @@
 @end
 
 
-@protocol VTDListInteractorOutput <NSObject>
+@protocol WHMostRecentInteractorOutput <NSObject>
 
-- (void)foundMostRecentItems:(NSArray *)mostRecentItems;
+- (void)foundMostRecentItems:(WHMostRecentMovies *)mostRecentItems;
 
 @end

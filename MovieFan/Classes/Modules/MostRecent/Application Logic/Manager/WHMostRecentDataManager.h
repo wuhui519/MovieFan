@@ -8,6 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+@class WHRealmDataStore;
+@class WHMostRecentMovies;
+
 @interface WHMostRecentDataManager : NSObject
+
+@property (nonatomic, strong) WHRealmDataStore *dataStore;
+
+- (void)recentMoviesCompletionBlock:(void (^)(WHMostRecentMovies *movies))completionBlock;
 
 @end

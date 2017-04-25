@@ -8,10 +8,13 @@
 
 #import "WHMovieInThreaterRequest.h"
 #import <AFNetworking/AFNetworking.h>
+#import "WHMostRecentMovies.h"
+#import <YYKit/NSObject+YYModel.h>
 
 @implementation WHMovieInThreaterRequest
 
-- (void)startRequest {
+- (void)startRequest:(void (^)(WHMostRecentMovies *))completionBlock
+                fail:(void (^)(NSString *))failBlock {
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
     
@@ -24,10 +27,15 @@
     
     NSURLSessionDataTask *dataTask = [manager dataTaskWithRequest:request completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
         if (error) {
-            NSLog(@"Error: %@", error);
+            NSLog(@"【URL】: %@/n【Error】: %@", URLString, error);
+            if (failBlock) {
+                failBlock([error description]);
+            }
         } else {
-            NSLog(@"%@", responseObject);
-            NSLog(@"%@ %@", response, responseObject);
+            WHMostRecentMovies *movies = [WHMostRecentMovies modelWithDictionary:responseObject];
+            if (completionBlock) {
+                completionBlock(movies);
+            }
         }
     }];
     [dataTask resume];

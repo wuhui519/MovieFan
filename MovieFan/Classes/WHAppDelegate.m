@@ -26,11 +26,8 @@
     WHAppDependencies *dependencies = [[WHAppDependencies alloc] init];
     self.dependencies = dependencies;
     [self.dependencies addDependenciesInWindow:self.window];
-    
     // test
     
-    WHMovieInThreaterRequest *r = [[WHMovieInThreaterRequest alloc] init];
-    [r startRequest];
     
     return YES;
 }

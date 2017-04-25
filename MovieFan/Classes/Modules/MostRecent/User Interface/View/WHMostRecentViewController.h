@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "WHMostRecentViewInterface.h"
+#import "WHMostRecentModuleInterface.h"
 
-@interface WHMostRecentViewController : UITableViewController
+@interface WHMostRecentViewController : UITableViewController<WHMostRecentViewInterface>
+
+@property (nonatomic, strong) id<WHMostRecentModuleInterface> eventHandler;
 
 @end

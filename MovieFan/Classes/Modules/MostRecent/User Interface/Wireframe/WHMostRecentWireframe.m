@@ -7,7 +7,22 @@
 //
 
 #import "WHMostRecentWireframe.h"
+#import "WHMostRecentViewController.h"
+#import "WHMostRecentPresenter.h"
+
+@interface WHMostRecentWireframe ()
+
+@end
 
 @implementation WHMostRecentWireframe
+
+- (void)presentSelfInterfaceWithVC:(WHMostRecentViewController *)viewController {
+    viewController.eventHandler = self.recentPresenter;
+    self.recentPresenter.userInterface = viewController;
+}
+
+- (void)presentDetailInterface {
+    
+}
 
 @end

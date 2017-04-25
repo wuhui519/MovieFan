@@ -8,8 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+@class WHMostRecentMovies;
+
 @interface WHMovieInThreaterRequest : NSObject
 
-- (void)startRequest;
+- (void)startRequest:(void (^)(WHMostRecentMovies *movies))completionBlock
+                fail:(void (^)(NSString *message))failBlock;
 
 @end

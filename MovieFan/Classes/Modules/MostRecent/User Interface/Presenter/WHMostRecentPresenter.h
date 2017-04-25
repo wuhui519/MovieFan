@@ -7,7 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "WHMostRecentInteractorIO.h"
+#import "WHMostRecentWireframe.h"
+#import "WHMostRecentViewInterface.h"
+#import "WHMostRecentModuleInterface.h"
 
-@interface WHMostRecentPresenter : NSObject
+@interface WHMostRecentPresenter : NSObject<WHMostRecentInteractorOutput, WHMostRecentModuleInterface>
+
+@property (nonatomic, strong) id<WHMostRecentInteractorInput> recentInteractor;
+@property (nonatomic, weak) WHMostRecentWireframe *recentWireframe;
+@property (nonatomic, weak) UIViewController<WHMostRecentViewInterface> *userInterface;
 
 @end

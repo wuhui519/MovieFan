@@ -7,8 +7,11 @@
 //
 
 #import "WHMostRecentViewController.h"
+#import "WHMostRecentMovies.h"
 
 @interface WHMostRecentViewController ()
+
+@property (nonatomic, strong) WHMostRecentMovies *data;
 
 @end
 
@@ -23,11 +26,33 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self.eventHandler updateView];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - view interface
+
+- (void)showNoContentMessage {
+//    self.view = self.noContentView;
+}
+
+
+- (void)showMostRecentDisplayData:(WHMostRecentMovies *)data
+{
+//    self.view = self.strongTableView;
+    
+    self.data = data;
+    [self reloadEntries];
+}
+
+
+- (void)reloadEntries
+{
+    [self.tableView reloadData];
 }
 
 #pragma mark - Table view data source
