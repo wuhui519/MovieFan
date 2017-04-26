@@ -9,10 +9,13 @@
 #import "WHMostRecentViewController.h"
 #import "WHMostRecentMovies.h"
 #import "WHMovieSubjectCell.h"
+#import <YYKit/YYCGUtilities.h>
+#import <Masonry/Masonry.h>
 
 @interface WHMostRecentViewController ()
 
 @property (nonatomic, strong) NSArray<WHMostRecentMovies *> *data;
+@property (nonatomic, strong) NSMutableDictionary *sectionHeaders;
 
 @end
 
@@ -28,6 +31,10 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     [self.eventHandler updateView];
+    // iOS8之后，加上下面两句就可以动态调整cell高度，前提是必须使用AutoLayout布局
+    self.tableView.estimatedRowHeight = 109;
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    self.sectionHeaders = [NSMutableDictionary dictionary];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -46,7 +53,7 @@
 {
 //    self.view = self.strongTableView;
     
-    self.data = @[data];
+    self.data = @[data, data];
     [self reloadEntries];
 }
 
@@ -76,16 +83,53 @@
     return cell;
 }
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    UIView *header = nil;
+    if (section < self.sectionHeaders.count) {
+        header = [self.sectionHeaders objectForKey:@(section)];
+    }
+    if (!header) {
+        header = [self sectionHeader];
+        [self.sectionHeaders setObject:header forKey:@(section)];
+        [self setSectionHeader:header withText:self.data[section].title];
+    }
+    return header;
 }
-*/
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 30.0;
+}
+
+#pragma mark - section header
+
+- (UIView *)sectionHeader {
+    UIView *bgView = [[UIView alloc] init];
+    bgView.backgroundColor = kThemeColorKhaki;
+    bgView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    UILabel *label = [[UILabel alloc] init];
+    label.textColor = kThemeColorBlue;
+    [bgView addSubview:label];
+    [label mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(bgView.mas_left).offset(15);
+        make.right.with.height.equalTo(bgView);
+    }];
+    UIView *btmLine = [[UIView alloc] init];
+    btmLine.backgroundColor = kSeperatorColor;
+    [bgView addSubview:btmLine];
+    [btmLine mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.equalTo(bgView.mas_bottom).offset(-0.5);
+        make.left.width.equalTo(bgView);
+        make.height.mas_equalTo(0.5);
+    }];
+    return bgView;
+}
+
+- (void)setSectionHeader:(UIView *)header withText:(NSString *)text {
+    for (UIView *subview in header.subviews) {
+        if ([subview isKindOfClass:[UILabel class]]) {
+            ((UILabel *)subview).text = text;
+        }
+    }
+}
 
 @end

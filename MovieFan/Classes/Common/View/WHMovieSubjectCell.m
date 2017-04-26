@@ -12,6 +12,7 @@
 
 @interface WHMovieSubjectCell ()
 
+@property (nonatomic, strong) UIImage *placeholderImg;
 @property (nonatomic, strong) IBOutlet UIImageView *posterImgView;
 @property (nonatomic, strong) IBOutlet UILabel *nameLabel;
 @property (nonatomic, strong) IBOutlet UILabel *ratingLable;
@@ -25,7 +26,7 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
-    
+    self.placeholderImg = [UIImage imageWithColor:[UIColor lightGrayColor] size:self.posterImgView.frame.size];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -36,7 +37,7 @@
 
 - (void)setMovie:(WHMovieSubject *)movie {
     [self.posterImgView setImageWithURL:[NSURL URLWithString:movie.images.small]
-                            placeholder:[UIImage imageWithColor:[UIColor lightGrayColor] size:self.posterImgView.frame.size]
+                            placeholder:self.placeholderImg
                                 options:YYWebImageOptionProgressiveBlur
                              completion:^(UIImage * _Nullable image, NSURL * _Nonnull url, YYWebImageFromType from, YYWebImageStage stage, NSError * _Nullable error) {
         
@@ -53,6 +54,8 @@
         casts = [casts stringByAppendingFormat:@"%@ ", obj.name];
     }];
     self.castLabel.text = casts;
+    
+    
 }
 
 @end

@@ -18,12 +18,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WHMovieSubjectCell" rowHeight="109" id="hOE-j2-h11" customClass="WHMovieSubjectCell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WHMovieSubjectCell" id="hOE-j2-h11" customClass="WHMovieSubjectCell">
                                 <rect key="frame" x="0.0" y="28" width="375" height="109"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hOE-j2-h11" id="I2O-vf-w9y">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="108"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="108.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gFR-eP-zgh">
@@ -36,37 +37,38 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="orO-3N-vsl">
                                             <rect key="frame" x="88" y="8" width="271" height="0.0"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" red="0.16862745100000001" green="0.2784313725" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFy-bL-DrA">
-                                            <rect key="frame" x="88" y="20" width="271" height="0.0"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFy-bL-DrA">
+                                            <rect key="frame" x="88" y="22" width="271" height="71.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <color key="textColor" white="0.25" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pV7-Y1-MEW">
-                                            <rect key="frame" x="88" y="26" width="271" height="0.0"/>
+                                            <rect key="frame" x="88" y="100.5" width="271" height="0.0"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <color key="textColor" white="0.25" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLM-IE-tBJ">
-                                            <rect key="frame" x="88" y="14" width="271" height="0.0"/>
+                                            <rect key="frame" x="88" y="15" width="271" height="0.0"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <color key="textColor" white="0.25" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="hLM-IE-tBJ" firstAttribute="top" secondItem="orO-3N-vsl" secondAttribute="bottom" constant="6" id="1wp-k5-dp5"/>
+                                        <constraint firstItem="hLM-IE-tBJ" firstAttribute="top" secondItem="orO-3N-vsl" secondAttribute="bottom" constant="7" id="1wp-k5-dp5"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="orO-3N-vsl" secondAttribute="trailing" constant="8" id="86R-6T-8vJ"/>
                                         <constraint firstItem="hFy-bL-DrA" firstAttribute="leading" secondItem="orO-3N-vsl" secondAttribute="leading" id="Jak-a6-wnH"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="pV7-Y1-MEW" secondAttribute="trailing" constant="8" id="KAB-lY-HWb"/>
-                                        <constraint firstItem="hFy-bL-DrA" firstAttribute="top" secondItem="hLM-IE-tBJ" secondAttribute="bottom" constant="6" id="MBi-mQ-xOg"/>
+                                        <constraint firstItem="hFy-bL-DrA" firstAttribute="top" secondItem="hLM-IE-tBJ" secondAttribute="bottom" constant="7" id="MBi-mQ-xOg"/>
                                         <constraint firstItem="orO-3N-vsl" firstAttribute="leading" secondItem="gFR-eP-zgh" secondAttribute="trailing" constant="8" id="NFP-oU-ewF"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="pV7-Y1-MEW" secondAttribute="bottom" id="QnS-Wx-LVv"/>
                                         <constraint firstItem="hLM-IE-tBJ" firstAttribute="leading" secondItem="orO-3N-vsl" secondAttribute="leading" id="btA-Pv-fjB"/>
-                                        <constraint firstItem="pV7-Y1-MEW" firstAttribute="top" secondItem="hFy-bL-DrA" secondAttribute="bottom" constant="6" id="ciX-3x-N17"/>
+                                        <constraint firstItem="pV7-Y1-MEW" firstAttribute="top" secondItem="hFy-bL-DrA" secondAttribute="bottom" constant="7" id="ciX-3x-N17"/>
                                         <constraint firstItem="gFR-eP-zgh" firstAttribute="top" secondItem="I2O-vf-w9y" secondAttribute="top" constant="3" id="ddR-oQ-cR2"/>
                                         <constraint firstItem="gFR-eP-zgh" firstAttribute="leading" secondItem="I2O-vf-w9y" secondAttribute="leadingMargin" constant="8" id="mcO-o3-2Rf"/>
                                         <constraint firstItem="pV7-Y1-MEW" firstAttribute="leading" secondItem="orO-3N-vsl" secondAttribute="leading" id="qNo-dO-W4D"/>
@@ -143,7 +145,8 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.16862745100000001" green="0.2784313725" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.16862745100000001" green="0.2784313725" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="j7F-E2-SPN" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
@@ -164,6 +167,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="UNO-2y-kH6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.16862745100000001" green="0.2784313725" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.16862745100000001" green="0.2784313725" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -183,6 +190,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="GjJ-8o-PiS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.16862745100000001" green="0.2784313725" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.16862745100000001" green="0.2784313725" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -242,6 +253,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="QkG-y9-VL2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.16862745100000001" green="0.2784313725" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.16862745100000001" green="0.2784313725" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		676159771EB090B20022FC54 /* WHMovieComingSoonRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 676159761EB090B20022FC54 /* WHMovieComingSoonRequest.m */; };
 		67B8817E1EACC4C300D87FF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B8817D1EACC4C300D87FF6 /* main.m */; };
 		67B881871EACC4C300D87FF6 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B881861EACC4C300D87FF6 /* SecondViewController.m */; };
 		67B8818C1EACC4C300D87FF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67B8818B1EACC4C300D87FF6 /* Assets.xcassets */; };
@@ -60,6 +61,8 @@
 		37806A227D9394A381AC3102 /* Pods_MovieFan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieFan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CF4E51E89AB2CB7E78066DC /* Pods_MovieFanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieFanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46CCDE1589EEB52C31E59A34 /* Pods-MovieFanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieFanUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MovieFanUITests/Pods-MovieFanUITests.release.xcconfig"; sourceTree = "<group>"; };
+		676159751EB090B20022FC54 /* WHMovieComingSoonRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHMovieComingSoonRequest.h; sourceTree = "<group>"; };
+		676159761EB090B20022FC54 /* WHMovieComingSoonRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHMovieComingSoonRequest.m; sourceTree = "<group>"; };
 		67B881791EACC4C300D87FF6 /* MovieFan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieFan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67B8817D1EACC4C300D87FF6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		67B881851EACC4C300D87FF6 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
@@ -507,6 +510,8 @@
 				67D06D0E1EADFCEB00B91A86 /* WHMostRecentDataManager.m */,
 				67D06D101EAEE8C200B91A86 /* WHMovieInThreaterRequest.h */,
 				67D06D111EAEE8C200B91A86 /* WHMovieInThreaterRequest.m */,
+				676159751EB090B20022FC54 /* WHMovieComingSoonRequest.h */,
+				676159761EB090B20022FC54 /* WHMovieComingSoonRequest.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -952,6 +957,7 @@
 				67B8817E1EACC4C300D87FF6 /* main.m in Sources */,
 				67D06D001EADF1DA00B91A86 /* WHAppDependencies.m in Sources */,
 				67D06D071EADF48300B91A86 /* WHMostRecentPresenter.m in Sources */,
+				676159771EB090B20022FC54 /* WHMovieComingSoonRequest.m in Sources */,
 				67D06D0F1EADFCEB00B91A86 /* WHMostRecentDataManager.m in Sources */,
 				67D06D1B1EAF113000B91A86 /* WHMovieSubject.m in Sources */,
 				67D06D041EADF42900B91A86 /* WHMostRecentWireframe.m in Sources */,
