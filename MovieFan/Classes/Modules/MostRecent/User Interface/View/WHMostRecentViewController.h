@@ -1,5 +1,5 @@
 //
-//  WHMostRecentViewControllerTableViewController.h
+//  WHMostRecentViewController.h
 //  MovieFan
 //
 //  Created by Faye on 2017/4/24.

@@ -9,6 +9,11 @@
 #import "WHMostRecentDataManager.h"
 #import "WHMovieInThreaterRequest.h"
 #import "WHMovieComingSoonRequest.h"
+#import <YYKit/NSObject+YYModel.h>
+#import "WHRLMMostRecentMovies.h"
+#import "WHMostRecentMovies.h"
+#import "WHRealmDataStore.h"
+#import <Realm/Realm.h>
 #import "NSArray+HOM.h"
 
 @interface WHMostRecentDataManager ()
@@ -44,7 +49,14 @@
         [array safeAddObject:inThreaterMovies];
         [array safeAddObject:comingSoonMovies];
         // 保存数据库
-        
+        NSDictionary *inThreaterMoviesDict = [inThreaterMovies modelToJSONObject];
+//        WHRLMMostRecentMovies *RLMInThreaterMovies = [WHRLMMostRecentMovies modelWithDictionary:inThreaterMoviesDict];
+        WHRLMMostRecentMovies *RLMInThreaterMovies = [inThreaterMovies createRLMObject];
+        [self.dataStore addOrUpdateObject:RLMInThreaterMovies];
+        [self.dataStore queryWithEntity:[WHRLMMostRecentMovies class] predict:@"" completionBlock:^(RLMResults *results) {
+            NSInteger count = results.count;
+            WHRLMMostRecentMovies *movies = results.firstObject;
+        }];
         completionBlock(array);
     });
 }

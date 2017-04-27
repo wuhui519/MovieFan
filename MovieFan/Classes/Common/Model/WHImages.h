@@ -14,5 +14,4 @@
 @property (nonatomic, strong) NSString *medium;
 @property (nonatomic, strong) NSString *small;
 
-
 @end

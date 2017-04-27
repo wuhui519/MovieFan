@@ -244,11 +244,11 @@
             </objects>
             <point key="canvasLocation" x="1689" y="1152"/>
         </scene>
-        <!--我的-->
+        <!--我的收藏-->
         <scene sceneID="Jtp-l7-6mc">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Obv-dF-k40" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="我的" image="tab_person" id="FD5-DV-KES"/>
+                    <tabBarItem key="tabBarItem" title="我的收藏" image="tab_person" id="FD5-DV-KES"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="QkG-y9-VL2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>

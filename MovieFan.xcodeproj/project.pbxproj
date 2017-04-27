@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		676159771EB090B20022FC54 /* WHMovieComingSoonRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 676159761EB090B20022FC54 /* WHMovieComingSoonRequest.m */; };
+		6761597E1EB1CFC80022FC54 /* WHRLMMovieSubject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6761597D1EB1CFC80022FC54 /* WHRLMMovieSubject.m */; };
+		676159811EB1DA260022FC54 /* WHRLMMostRecentMovies.m in Sources */ = {isa = PBXBuildFile; fileRef = 676159801EB1DA260022FC54 /* WHRLMMostRecentMovies.m */; };
 		67B8817E1EACC4C300D87FF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B8817D1EACC4C300D87FF6 /* main.m */; };
 		67B881871EACC4C300D87FF6 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B881861EACC4C300D87FF6 /* SecondViewController.m */; };
 		67B8818C1EACC4C300D87FF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67B8818B1EACC4C300D87FF6 /* Assets.xcassets */; };
@@ -63,6 +65,11 @@
 		46CCDE1589EEB52C31E59A34 /* Pods-MovieFanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieFanUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MovieFanUITests/Pods-MovieFanUITests.release.xcconfig"; sourceTree = "<group>"; };
 		676159751EB090B20022FC54 /* WHMovieComingSoonRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHMovieComingSoonRequest.h; sourceTree = "<group>"; };
 		676159761EB090B20022FC54 /* WHMovieComingSoonRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHMovieComingSoonRequest.m; sourceTree = "<group>"; };
+		6761597A1EB1C13C0022FC54 /* WHMostRecentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHMostRecentViewController.h; sourceTree = "<group>"; };
+		6761597C1EB1CFC80022FC54 /* WHRLMMovieSubject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHRLMMovieSubject.h; sourceTree = "<group>"; };
+		6761597D1EB1CFC80022FC54 /* WHRLMMovieSubject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHRLMMovieSubject.m; sourceTree = "<group>"; };
+		6761597F1EB1DA260022FC54 /* WHRLMMostRecentMovies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHRLMMostRecentMovies.h; sourceTree = "<group>"; };
+		676159801EB1DA260022FC54 /* WHRLMMostRecentMovies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHRLMMostRecentMovies.m; sourceTree = "<group>"; };
 		67B881791EACC4C300D87FF6 /* MovieFan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieFan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67B8817D1EACC4C300D87FF6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		67B881851EACC4C300D87FF6 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
@@ -170,6 +177,17 @@
 				0C8F753983977734944D2765 /* Pods_MovieFanUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6761597B1EB1C4EB0022FC54 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				6761597C1EB1CFC80022FC54 /* WHRLMMovieSubject.h */,
+				6761597D1EB1CFC80022FC54 /* WHRLMMovieSubject.m */,
+				6761597F1EB1DA260022FC54 /* WHRLMMostRecentMovies.h */,
+				676159801EB1DA260022FC54 /* WHRLMMostRecentMovies.m */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		67B881701EACC4C300D87FF6 = {
@@ -286,6 +304,7 @@
 		67D06CBC1EADA57700B91A86 /* Store */ = {
 			isa = PBXGroup;
 			children = (
+				6761597B1EB1C4EB0022FC54 /* Entity */,
 				67D06D2A1EAF251A00B91A86 /* WHRealmDataStore.h */,
 				67D06D2B1EAF251A00B91A86 /* WHRealmDataStore.m */,
 			);
@@ -555,6 +574,7 @@
 			isa = PBXGroup;
 			children = (
 				67D06CEC1EADA60E00B91A86 /* WHMostRecentViewInterface.h */,
+				6761597A1EB1C13C0022FC54 /* WHMostRecentViewController.h */,
 				67D06D091EADF72600B91A86 /* WHMostRecentViewController.m */,
 			);
 			path = View;
@@ -962,6 +982,8 @@
 				67D06D331EAF4A4300B91A86 /* WHMovieSubjectCell.m in Sources */,
 				67D06D2C1EAF251A00B91A86 /* WHRealmDataStore.m in Sources */,
 				67D06D121EAEE8C200B91A86 /* WHMovieInThreaterRequest.m in Sources */,
+				6761597E1EB1CFC80022FC54 /* WHRLMMovieSubject.m in Sources */,
+				676159811EB1DA260022FC54 /* WHRLMMostRecentMovies.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
