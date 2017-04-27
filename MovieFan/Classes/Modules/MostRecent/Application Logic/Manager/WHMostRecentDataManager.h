@@ -15,6 +15,6 @@
 
 @property (nonatomic, strong) WHRealmDataStore *dataStore;
 
-- (void)recentMoviesCompletionBlock:(void (^)(WHMostRecentMovies *movies))completionBlock;
+- (void)recentMoviesCompletionBlock:(void (^)(NSArray<WHMostRecentMovies *> *movies))completionBlock;
 
 @end

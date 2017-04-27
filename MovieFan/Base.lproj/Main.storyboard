@@ -158,11 +158,11 @@
             </objects>
             <point key="canvasLocation" x="-449" y="582"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--上映电影-->
         <scene sceneID="hqI-ob-f4N">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j7F-E2-SPN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="mostRecent" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="上映电影" image="tab_movie" id="acW-dT-cKf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="UNO-2y-kH6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -181,11 +181,11 @@
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--排行榜-->
         <scene sceneID="iJ5-PD-8KU">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mDc-rw-Rf3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="mostViewed" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="排行榜" image="tab_cup" id="cPa-gy-q4n"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="GjJ-8o-PiS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -244,11 +244,11 @@
             </objects>
             <point key="canvasLocation" x="1689" y="1152"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--我的-->
         <scene sceneID="Jtp-l7-6mc">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Obv-dF-k40" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="FD5-DV-KES"/>
+                    <tabBarItem key="tabBarItem" title="我的" image="tab_person" id="FD5-DV-KES"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="QkG-y9-VL2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -268,4 +268,9 @@
             <point key="canvasLocation" x="750" y="1152"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="tab_cup" width="16" height="16"/>
+        <image name="tab_movie" width="16" height="16"/>
+        <image name="tab_person" width="16" height="16"/>
+    </resources>
 </document>

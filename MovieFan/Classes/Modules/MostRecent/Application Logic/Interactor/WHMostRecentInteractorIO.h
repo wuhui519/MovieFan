@@ -18,6 +18,6 @@
 
 @protocol WHMostRecentInteractorOutput <NSObject>
 
-- (void)foundMostRecentItems:(WHMostRecentMovies *)mostRecentItems;
+- (void)foundMostRecentItems:(NSArray<WHMostRecentMovies *> *)mostRecentItems;
 
 @end

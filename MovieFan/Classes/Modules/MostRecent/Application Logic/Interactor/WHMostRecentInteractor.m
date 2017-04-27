@@ -27,7 +27,7 @@
 
 - (void)findMostRecentItems {
     WEAKSELF
-    [self.dataManager recentMoviesCompletionBlock:^(WHMostRecentMovies *movies) {
+    [self.dataManager recentMoviesCompletionBlock:^(NSArray<WHMostRecentMovies *> *movies) {
         STRONGSELF
         [strongSelf.output foundMostRecentItems:movies];
     }];

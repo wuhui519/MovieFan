@@ -43,7 +43,15 @@
         
     }];
     self.nameLabel.text = movie.title;
-    self.ratingLable.text = [NSString stringWithFormat:@"评分: %@", movie.rating.average];
+    if (movie.rating.average.floatValue <= 0) {
+        self.ratingLable.text = [NSString stringWithFormat:@"类型: %@", [movie.genres componentsJoinedByString:@" "]];
+        self.ratingLable.textColor = [UIColor darkGrayColor];
+    }
+    else {
+        self.ratingLable.text = [NSString stringWithFormat:@"评分: %@", movie.rating.average];
+        self.ratingLable.textColor = kThemeColorRed;
+    }
+    
     __block NSString *directers = @"导演: ";
     [movie.directors enumerateObjectsUsingBlock:^(WHCelebrity * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         directers = [directers stringByAppendingFormat:@"%@ ", obj.name];

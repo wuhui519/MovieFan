@@ -90,7 +90,6 @@
 		67D06D031EADF42900B91A86 /* WHMostRecentWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHMostRecentWireframe.m; sourceTree = "<group>"; };
 		67D06D051EADF48300B91A86 /* WHMostRecentPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHMostRecentPresenter.h; sourceTree = "<group>"; };
 		67D06D061EADF48300B91A86 /* WHMostRecentPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHMostRecentPresenter.m; sourceTree = "<group>"; };
-		67D06D081EADF72600B91A86 /* WHMostRecentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHMostRecentViewController.h; sourceTree = "<group>"; };
 		67D06D091EADF72600B91A86 /* WHMostRecentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHMostRecentViewController.m; sourceTree = "<group>"; };
 		67D06D0D1EADFCEB00B91A86 /* WHMostRecentDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHMostRecentDataManager.h; sourceTree = "<group>"; };
 		67D06D0E1EADFCEB00B91A86 /* WHMostRecentDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHMostRecentDataManager.m; sourceTree = "<group>"; };
@@ -556,7 +555,6 @@
 			isa = PBXGroup;
 			children = (
 				67D06CEC1EADA60E00B91A86 /* WHMostRecentViewInterface.h */,
-				67D06D081EADF72600B91A86 /* WHMostRecentViewController.h */,
 				67D06D091EADF72600B91A86 /* WHMostRecentViewController.m */,
 			);
 			path = View;

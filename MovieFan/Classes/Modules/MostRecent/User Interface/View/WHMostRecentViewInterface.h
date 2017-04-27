@@ -13,7 +13,7 @@
 @protocol WHMostRecentViewInterface <NSObject>
 
 - (void)showNoContentMessage;
-- (void)showMostRecentDisplayData:(WHMostRecentMovies *)data;
+- (void)showMostRecentDisplayData:(NSArray<WHMostRecentMovies *> *)data;
 - (void)reloadEntries;
 
 @end

@@ -16,13 +16,11 @@
 
 #pragma mark - List Interactor Output
 
-- (void)foundMostRecentItems:(WHMostRecentMovies *)mostRecentItems {
-    if ([mostRecentItems.subjects count] == 0)
-    {
+- (void)foundMostRecentItems:(NSArray<WHMostRecentMovies *> *)mostRecentItems {
+    if (mostRecentItems.count == 0) {
         [self.userInterface showNoContentMessage];
     }
-    else
-    {
+    else {
         [self.userInterface showMostRecentDisplayData:mostRecentItems];
     }
 }

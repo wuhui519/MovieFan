@@ -23,7 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"院线";
+    self.navigationItem.title = @"上映电影";
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -34,6 +34,7 @@
     // iOS8之后，加上下面两句就可以动态调整cell高度，前提是必须使用AutoLayout布局
     self.tableView.estimatedRowHeight = 109;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
+    self.tableView.tableFooterView = [[UIView alloc] init];
     self.sectionHeaders = [NSMutableDictionary dictionary];
 }
 
@@ -49,17 +50,14 @@
 }
 
 
-- (void)showMostRecentDisplayData:(WHMostRecentMovies *)data
-{
+- (void)showMostRecentDisplayData:(NSArray<WHMostRecentMovies *> *)data {
 //    self.view = self.strongTableView;
-    
-    self.data = @[data, data];
+    self.data = data;
     [self reloadEntries];
 }
 
 
-- (void)reloadEntries
-{
+- (void)reloadEntries {
     [self.tableView reloadData];
 }
 
@@ -104,9 +102,12 @@
 
 - (UIView *)sectionHeader {
     UIView *bgView = [[UIView alloc] init];
-    bgView.backgroundColor = kThemeColorKhaki;
     bgView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    UIToolbar *toolbar = [[UIToolbar alloc] init];
+    toolbar.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    [bgView addSubview:toolbar];
     UILabel *label = [[UILabel alloc] init];
+    label.font = [UIFont systemFontOfSize:14.0];
     label.textColor = kThemeColorBlue;
     [bgView addSubview:label];
     [label mas_makeConstraints:^(MASConstraintMaker *make) {

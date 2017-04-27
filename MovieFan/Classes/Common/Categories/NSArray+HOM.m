@@ -37,4 +37,10 @@
     return collection;
 }
 
+- (void)safeAddObject:(id)anObject {
+    if ([self isKindOfClass:[NSMutableArray class]] && nil != anObject) {
+        [(NSMutableArray *)self addObject:anObject];
+    }
+}
+
 @end

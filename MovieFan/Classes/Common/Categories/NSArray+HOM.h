@@ -24,8 +24,9 @@
 #import <Foundation/Foundation.h>
 
 
-@interface NSArray (HOM)
+@interface NSArray<ObjectType> (HOM)
 
 - (NSArray *)arrayFromObjectsCollectedWithBlock:(id(^)(id object))block;
+- (void)safeAddObject:(ObjectType)anObject;
 
 @end
