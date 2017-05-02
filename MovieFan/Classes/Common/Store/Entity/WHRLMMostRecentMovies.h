@@ -13,6 +13,7 @@ RLM_ARRAY_TYPE(WHRLMMovieSubject)
 
 @interface WHRLMMostRecentMovies : RLMObject
 
+@property NSInteger type;
 @property NSInteger start;
 @property NSInteger count;
 @property NSInteger total;              //总数

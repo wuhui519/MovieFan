@@ -22,6 +22,7 @@
 @property NSInteger max;    //最高评分
 @property NSString *average;//评分
 @property NSInteger stars;  //评星数
+@property (readonly) RLMLinkingObjects *movie;
 
 @end
 
@@ -46,7 +47,7 @@ RLM_ARRAY_TYPE(WHRLMCelebrity)
 @property WHRLMRanking *rating;            //评分
 @property NSString *year;               //年代
 @property NSString *subtype;            //条目分类, movie或者tv
-@property NSArray<NSString *> *genres;              //影片类型，最多提供3个
+@property NSString *genres;              //影片类型，最多提供3个
 @property RLMArray<WHRLMCelebrity *><WHRLMCelebrity> *casts;               //主演，最多可获得4个，数据结构为影人的简化描述
 @property RLMArray<WHRLMCelebrity *><WHRLMCelebrity> *directors;           //导演，数据结构为影人的简化描述
 @property NSInteger collect_count;      //看过人数

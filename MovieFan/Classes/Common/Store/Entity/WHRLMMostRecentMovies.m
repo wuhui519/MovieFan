@@ -7,7 +7,12 @@
 //
 
 #import "WHRLMMostRecentMovies.h"
+#import "WHRLMMovieSubject.h"
 
 @implementation WHRLMMostRecentMovies
+
++ (NSString *)primaryKey {
+    return @"type";
+}
 
 @end

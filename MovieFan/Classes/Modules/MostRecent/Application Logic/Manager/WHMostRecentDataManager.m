@@ -15,6 +15,7 @@
 #import "WHRealmDataStore.h"
 #import <Realm/Realm.h>
 #import "NSArray+HOM.h"
+#import "RLMObject+Converter.h"
 
 @interface WHMostRecentDataManager ()
 
@@ -24,6 +25,20 @@
 
 - (void)recentMoviesCompletionBlock:(void (^)(NSArray<WHMostRecentMovies *> *))completionBlock {
     // 先从数据库里读，成功后回调
+    [self.dataStore queryWithEntity:[WHRLMMostRecentMovies class] predict:@"" completionBlock:^(RLMResults *results) {
+        RLMResults<WHRLMMostRecentMovies *> *sortedResults = [results sortedResultsUsingKeyPath:@"type" ascending:YES];
+        NSInteger count = results.count;
+        NSMutableArray<WHMostRecentMovies *> *dbMovies = [NSMutableArray arrayWithCapacity:count];
+        for (WHRLMMostRecentMovies *movies in sortedResults) {
+            NSDictionary *dict = [movies convertToJSONDictionary];
+            WHMostRecentMovies *movie = [WHMostRecentMovies modelWithJSON:dict];
+            [dbMovies addObject:movie];
+        }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            completionBlock(dbMovies);
+        });
+    }];
+    
     // 然后从网络读取最新，并更新数据库
     __block WHMostRecentMovies *inThreaterMovies = nil;
     __block WHMostRecentMovies *comingSoonMovies = nil;
@@ -45,19 +60,23 @@
         dispatch_group_leave(requestGroup);
     }];
     dispatch_group_notify(requestGroup, dispatch_get_main_queue(), ^{
-        NSMutableArray<WHMostRecentMovies *> *array = [NSMutableArray array];
-        [array safeAddObject:inThreaterMovies];
-        [array safeAddObject:comingSoonMovies];
+        NSMutableArray<WHMostRecentMovies *> *requestMovies = [NSMutableArray array];
+        NSMutableArray<WHRLMMostRecentMovies *> *RLMMovies = [NSMutableArray array];
+        if (inThreaterMovies) {
+            inThreaterMovies.type = WHMostRecentMovies_InThreater;
+            [requestMovies addObject:inThreaterMovies];
+            WHRLMMostRecentMovies *RLMInThreaterMovies = [[WHRLMMostRecentMovies alloc] initWithValue:inThreaterMovies];
+            [RLMMovies addObject:RLMInThreaterMovies];
+        }
+        if (comingSoonMovies) {
+            comingSoonMovies.type = WHMostRecentMovies_ComingSoon;
+            [requestMovies addObject:comingSoonMovies];
+            WHRLMMostRecentMovies *RLMComingSoonMovies = [[WHRLMMostRecentMovies alloc] initWithValue:comingSoonMovies];
+            [RLMMovies addObject:RLMComingSoonMovies];
+        }
         // 保存数据库
-        NSDictionary *inThreaterMoviesDict = [inThreaterMovies modelToJSONObject];
-//        WHRLMMostRecentMovies *RLMInThreaterMovies = [WHRLMMostRecentMovies modelWithDictionary:inThreaterMoviesDict];
-        WHRLMMostRecentMovies *RLMInThreaterMovies = [inThreaterMovies createRLMObject];
-        [self.dataStore addOrUpdateObject:RLMInThreaterMovies];
-        [self.dataStore queryWithEntity:[WHRLMMostRecentMovies class] predict:@"" completionBlock:^(RLMResults *results) {
-            NSInteger count = results.count;
-            WHRLMMostRecentMovies *movies = results.firstObject;
-        }];
-        completionBlock(array);
+        [self.dataStore addOrUpdateObjectsFromArray:RLMMovies];
+        completionBlock(requestMovies);
     });
 }
 

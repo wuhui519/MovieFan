@@ -85,7 +85,14 @@
     dispatch_async(self.synchronizationQueue, ^{
         if ([aClass isSubclassOfClass:[RLMObject class]]) {
             RLMRealm *realm = [RLMRealm defaultRealm];
-            [aClass objectsInRealm:realm where:predict];
+            RLMResults *result = nil;
+            if (predict.length == 0) {
+                result = [aClass allObjectsInRealm:realm];
+            }
+            else {
+                result = [aClass objectsInRealm:realm where:predict];
+            }
+            completionBlock(result);
         }
     });
 }

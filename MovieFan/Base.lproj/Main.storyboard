@@ -67,13 +67,13 @@
                                         <constraint firstItem="hFy-bL-DrA" firstAttribute="top" secondItem="hLM-IE-tBJ" secondAttribute="bottom" constant="7" id="MBi-mQ-xOg"/>
                                         <constraint firstItem="orO-3N-vsl" firstAttribute="leading" secondItem="gFR-eP-zgh" secondAttribute="trailing" constant="8" id="NFP-oU-ewF"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="pV7-Y1-MEW" secondAttribute="bottom" id="QnS-Wx-LVv"/>
+                                        <constraint firstItem="orO-3N-vsl" firstAttribute="top" secondItem="I2O-vf-w9y" secondAttribute="top" constant="8" id="SEZ-Hd-tpj"/>
                                         <constraint firstItem="hLM-IE-tBJ" firstAttribute="leading" secondItem="orO-3N-vsl" secondAttribute="leading" id="btA-Pv-fjB"/>
                                         <constraint firstItem="pV7-Y1-MEW" firstAttribute="top" secondItem="hFy-bL-DrA" secondAttribute="bottom" constant="7" id="ciX-3x-N17"/>
-                                        <constraint firstItem="gFR-eP-zgh" firstAttribute="top" secondItem="I2O-vf-w9y" secondAttribute="top" constant="3" id="ddR-oQ-cR2"/>
+                                        <constraint firstItem="gFR-eP-zgh" firstAttribute="centerY" secondItem="I2O-vf-w9y" secondAttribute="centerY" id="ddR-oQ-cR2"/>
                                         <constraint firstItem="gFR-eP-zgh" firstAttribute="leading" secondItem="I2O-vf-w9y" secondAttribute="leadingMargin" constant="8" id="mcO-o3-2Rf"/>
                                         <constraint firstItem="pV7-Y1-MEW" firstAttribute="leading" secondItem="orO-3N-vsl" secondAttribute="leading" id="qNo-dO-W4D"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="hFy-bL-DrA" secondAttribute="trailing" constant="8" id="sp2-EB-5Lg"/>
-                                        <constraint firstItem="orO-3N-vsl" firstAttribute="top" secondItem="gFR-eP-zgh" secondAttribute="top" constant="5" id="z0l-vw-v3g"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="hLM-IE-tBJ" secondAttribute="trailing" constant="8" id="zX8-0Z-wtU"/>
                                     </constraints>
                                 </tableViewCellContentView>

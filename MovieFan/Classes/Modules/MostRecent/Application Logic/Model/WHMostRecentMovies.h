@@ -9,17 +9,20 @@
 #import <Foundation/Foundation.h>
 #import "WHMovieSubject.h"
 
+typedef enum : NSUInteger {
+    WHMostRecentMovies_InThreater,
+    WHMostRecentMovies_ComingSoon,
+} WHMostRecentMoviesType;
+
 @class WHRLMMostRecentMovies;
 
 @interface WHMostRecentMovies : NSObject
 
+@property (nonatomic, assign) WHMostRecentMoviesType type;
 @property (nonatomic, assign) NSInteger start;
 @property (nonatomic, assign) NSInteger count;
 @property (nonatomic, assign) NSInteger total;              //总数
 @property (nonatomic, strong) NSArray<WHMovieSubject *> *subjects;            //电影条目
 @property (nonatomic, strong) NSString *title;              //标题
-
-- (WHRLMMostRecentMovies *)createRLMObject;
-+ (instancetype)createdFromRLMObject:(WHRLMMostRecentMovies *)rlmObject;
 
 @end

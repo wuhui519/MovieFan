@@ -44,7 +44,7 @@
     }];
     self.nameLabel.text = movie.title;
     if (movie.rating.average.floatValue <= 0) {
-        self.ratingLable.text = [NSString stringWithFormat:@"类型: %@", [movie.genres componentsJoinedByString:@" "]];
+        self.ratingLable.text = [NSString stringWithFormat:@"类型: %@", movie.genres];
         self.ratingLable.textColor = [UIColor darkGrayColor];
     }
     else {

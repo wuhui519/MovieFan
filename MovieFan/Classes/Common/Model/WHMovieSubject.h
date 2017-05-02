@@ -21,7 +21,7 @@
 @property (nonatomic, strong) WHRanking *rating;            //评分
 @property (nonatomic, strong) NSString *year;               //年代
 @property (nonatomic, strong) NSString *subtype;            //条目分类, movie或者tv
-@property (nonatomic, strong) NSArray<NSString *> *genres;              //影片类型，最多提供3个
+@property (nonatomic, strong) NSString *genres;             //影片类型，最多提供3个
 @property (nonatomic, strong) NSArray<WHCelebrity *> *casts;               //主演，最多可获得4个，数据结构为影人的简化描述
 @property (nonatomic, strong) NSArray<WHCelebrity *> *directors;           //导演，数据结构为影人的简化描述
 @property (nonatomic, assign) NSInteger collect_count;      //看过人数
