@@ -35,6 +35,11 @@
 		67D06D2C1EAF251A00B91A86 /* WHRealmDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D06D2B1EAF251A00B91A86 /* WHRealmDataStore.m */; };
 		67D06D331EAF4A4300B91A86 /* WHMovieSubjectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D06D321EAF4A4300B91A86 /* WHMovieSubjectCell.m */; };
 		67DCC9A41EB87E4F00A17ABB /* RLMObject+Converter.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DCC9A31EB87E4F00A17ABB /* RLMObject+Converter.m */; };
+		67DCC9AB1EB8839700A17ABB /* WHMostStarredViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DCC9AA1EB8839700A17ABB /* WHMostStarredViewController.m */; };
+		67DCC9AE1EB883FB00A17ABB /* WHMostStarredWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DCC9AD1EB883FB00A17ABB /* WHMostStarredWireframe.m */; };
+		67DCC9B11EB8840B00A17ABB /* WHMostStarredPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DCC9B01EB8840B00A17ABB /* WHMostStarredPresenter.m */; };
+		67DCC9B91EB8846800A17ABB /* WHMostStarredDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DCC9B81EB8846800A17ABB /* WHMostStarredDataManager.m */; };
+		67DCC9BC1EB8848100A17ABB /* WHMostStarredInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DCC9BB1EB8848100A17ABB /* WHMostStarredInteractor.m */; };
 		77BAF7FB7B332C4C1EB975E3 /* Pods_MovieFanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF4E51E89AB2CB7E78066DC /* Pods_MovieFanTests.framework */; };
 		95AC4170A4D635D18D852780 /* Pods_MovieFan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37806A227D9394A381AC3102 /* Pods_MovieFan.framework */; };
 		E9CA28072C8A500B8F00745C /* Pods_MovieFanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C8F753983977734944D2765 /* Pods_MovieFanUITests.framework */; };
@@ -124,6 +129,19 @@
 		67D06D321EAF4A4300B91A86 /* WHMovieSubjectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHMovieSubjectCell.m; sourceTree = "<group>"; };
 		67DCC9A21EB87E4F00A17ABB /* RLMObject+Converter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RLMObject+Converter.h"; sourceTree = "<group>"; };
 		67DCC9A31EB87E4F00A17ABB /* RLMObject+Converter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RLMObject+Converter.m"; sourceTree = "<group>"; };
+		67DCC9A81EB8834600A17ABB /* WHMostStarredViewInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHMostStarredViewInterface.h; sourceTree = "<group>"; };
+		67DCC9A91EB8839700A17ABB /* WHMostStarredViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHMostStarredViewController.h; sourceTree = "<group>"; };
+		67DCC9AA1EB8839700A17ABB /* WHMostStarredViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHMostStarredViewController.m; sourceTree = "<group>"; };
+		67DCC9AC1EB883FB00A17ABB /* WHMostStarredWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHMostStarredWireframe.h; sourceTree = "<group>"; };
+		67DCC9AD1EB883FB00A17ABB /* WHMostStarredWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHMostStarredWireframe.m; sourceTree = "<group>"; };
+		67DCC9AF1EB8840B00A17ABB /* WHMostStarredPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHMostStarredPresenter.h; sourceTree = "<group>"; };
+		67DCC9B01EB8840B00A17ABB /* WHMostStarredPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHMostStarredPresenter.m; sourceTree = "<group>"; };
+		67DCC9B51EB8843700A17ABB /* WHMostStarredModuleInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHMostStarredModuleInterface.h; sourceTree = "<group>"; };
+		67DCC9B61EB8845200A17ABB /* WHMostStarredInteractorIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHMostStarredInteractorIO.h; sourceTree = "<group>"; };
+		67DCC9B71EB8846800A17ABB /* WHMostStarredDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHMostStarredDataManager.h; sourceTree = "<group>"; };
+		67DCC9B81EB8846800A17ABB /* WHMostStarredDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHMostStarredDataManager.m; sourceTree = "<group>"; };
+		67DCC9BA1EB8848100A17ABB /* WHMostStarredInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHMostStarredInteractor.h; sourceTree = "<group>"; };
+		67DCC9BB1EB8848100A17ABB /* WHMostStarredInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHMostStarredInteractor.m; sourceTree = "<group>"; };
 		9AE8898E79060F9A6B09A216 /* Pods-MovieFanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieFanUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieFanUITests/Pods-MovieFanUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A79DDD078DA2FF404978966E /* Pods-MovieFanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieFanTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MovieFanTests/Pods-MovieFanTests.release.xcconfig"; sourceTree = "<group>"; };
 		DB6A1A85099D650474CF52BD /* Pods-MovieFanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieFanTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieFanTests/Pods-MovieFanTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -616,6 +634,9 @@
 		67D06CE11EADA57700B91A86 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				67DCC9B61EB8845200A17ABB /* WHMostStarredInteractorIO.h */,
+				67DCC9BA1EB8848100A17ABB /* WHMostStarredInteractor.h */,
+				67DCC9BB1EB8848100A17ABB /* WHMostStarredInteractor.m */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -623,6 +644,8 @@
 		67D06CE21EADA57700B91A86 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				67DCC9B71EB8846800A17ABB /* WHMostStarredDataManager.h */,
+				67DCC9B81EB8846800A17ABB /* WHMostStarredDataManager.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -637,6 +660,7 @@
 		67D06CE41EADA57700B91A86 /* Module Interface */ = {
 			isa = PBXGroup;
 			children = (
+				67DCC9B51EB8843700A17ABB /* WHMostStarredModuleInterface.h */,
 			);
 			path = "Module Interface";
 			sourceTree = "<group>";
@@ -654,6 +678,8 @@
 		67D06CE61EADA57700B91A86 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				67DCC9AF1EB8840B00A17ABB /* WHMostStarredPresenter.h */,
+				67DCC9B01EB8840B00A17ABB /* WHMostStarredPresenter.m */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -661,6 +687,9 @@
 		67D06CE71EADA57700B91A86 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				67DCC9A81EB8834600A17ABB /* WHMostStarredViewInterface.h */,
+				67DCC9A91EB8839700A17ABB /* WHMostStarredViewController.h */,
+				67DCC9AA1EB8839700A17ABB /* WHMostStarredViewController.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -668,6 +697,8 @@
 		67D06CE81EADA57700B91A86 /* Wireframe */ = {
 			isa = PBXGroup;
 			children = (
+				67DCC9AC1EB883FB00A17ABB /* WHMostStarredWireframe.h */,
+				67DCC9AD1EB883FB00A17ABB /* WHMostStarredWireframe.m */,
 			);
 			path = Wireframe;
 			sourceTree = "<group>";
@@ -971,7 +1002,9 @@
 				67D06D271EAF22BD00B91A86 /* NSArray+HOM.m in Sources */,
 				67D06D0A1EADF72600B91A86 /* WHMostRecentViewController.m in Sources */,
 				67D06D151EAEF9FC00B91A86 /* WHRanking.m in Sources */,
+				67DCC9AE1EB883FB00A17ABB /* WHMostStarredWireframe.m in Sources */,
 				67D06D181EAF0EAC00B91A86 /* WHImages.m in Sources */,
+				67DCC9B11EB8840B00A17ABB /* WHMostStarredPresenter.m in Sources */,
 				67B881871EACC4C300D87FF6 /* SecondViewController.m in Sources */,
 				67D06CF61EADEE2A00B91A86 /* WHRootWireframe.m in Sources */,
 				67D06CFF1EADF1DA00B91A86 /* WHAppDelegate.m in Sources */,
@@ -979,6 +1012,9 @@
 				67D06D001EADF1DA00B91A86 /* WHAppDependencies.m in Sources */,
 				67D06D071EADF48300B91A86 /* WHMostRecentPresenter.m in Sources */,
 				676159771EB090B20022FC54 /* WHMovieComingSoonRequest.m in Sources */,
+				67DCC9AB1EB8839700A17ABB /* WHMostStarredViewController.m in Sources */,
+				67DCC9B91EB8846800A17ABB /* WHMostStarredDataManager.m in Sources */,
+				67DCC9BC1EB8848100A17ABB /* WHMostStarredInteractor.m in Sources */,
 				67D06D0F1EADFCEB00B91A86 /* WHMostRecentDataManager.m in Sources */,
 				67D06D1B1EAF113000B91A86 /* WHMovieSubject.m in Sources */,
 				67D06D041EADF42900B91A86 /* WHMostRecentWireframe.m in Sources */,

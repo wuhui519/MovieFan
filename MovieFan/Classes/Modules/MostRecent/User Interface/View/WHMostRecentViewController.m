@@ -46,12 +46,10 @@
 #pragma mark - view interface
 
 - (void)showNoContentMessage {
-//    self.view = self.noContentView;
 }
 
 
 - (void)showMostRecentDisplayData:(NSArray<WHMostRecentMovies *> *)data {
-//    self.view = self.strongTableView;
     self.data = data;
     [self reloadEntries];
 }

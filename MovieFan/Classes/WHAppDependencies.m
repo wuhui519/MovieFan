@@ -14,6 +14,11 @@
 #import "WHMostRecentInteractor.h"
 #import "WHMostRecentDataManager.h"
 #import "WHMostRecentViewController.h"
+#import "WHMostStarredWireframe.h"
+#import "WHMostStarredPresenter.h"
+#import "WHMostStarredInteractor.h"
+#import "WHMostStarredDataManager.h"
+#import "WHMostStarredViewController.h"
 
 @interface WHAppDependencies ()<UITabBarControllerDelegate>
 
@@ -34,36 +39,30 @@
     WHMostRecentDataManager *recentDataManager = [[WHMostRecentDataManager alloc] init];
     WHMostRecentInteractor *recentInteractor = [[WHMostRecentInteractor alloc] initWithDataManager:recentDataManager];
     
-    // Add Module Classes
-//    VTDAddWireframe *addWireframe = [[VTDAddWireframe alloc] init];
-//    VTDAddInteractor *addInteractor = [[VTDAddInteractor alloc] init];
-//    VTDAddPresenter *addPresenter = [[VTDAddPresenter alloc] init];
-//    VTDAddDataManager *addDataManager = [[VTDAddDataManager alloc] init];
-    
-    // MostRecent Module Classes
     recentInteractor.output = recentPresenter;
-    
     recentPresenter.recentInteractor = recentInteractor;
     recentPresenter.recentWireframe = recentWireframe;
-    
 //    recentWireframe.detailWireframe = detailWireframe;
     recentWireframe.recentPresenter = recentPresenter;
     recentWireframe.rootWireframe = rootWireframe;
     self.recentWireframe = recentWireframe;
-    
     recentDataManager.dataStore = dataStore;
     
-    // Add Module Classes
-//    addInteractor.addDataManager = addDataManager;
-//    
-//    addPresenter.addInteractor = addInteractor;
-//    
-//    addWireframe.addPresenter = addPresenter;
-//    
-//    addPresenter.addWireframe = addWireframe;
-//    addPresenter.addModuleDelegate = listPresenter;
-//    
-//    addDataManager.dataStore = dataStore;
+    
+    // MostStarred Modules Classes
+    WHMostStarredWireframe *starredWireframe = [[WHMostStarredWireframe alloc] init];
+    WHMostStarredPresenter *starredPresenter = [[WHMostStarredPresenter alloc] init];
+    WHMostStarredDataManager *starredDataManager = [[WHMostStarredDataManager alloc] init];
+    WHMostStarredInteractor *starredInteractor = [[WHMostStarredInteractor alloc] initWithDataManager:recentDataManager];
+    
+    starredInteractor.output = starredPresenter;
+    starredPresenter.starredInteractor = starredInteractor;
+    starredPresenter.starredWireframe = starredWireframe;
+    //    starredWireframe.detailWireframe = detailWireframe;
+    starredWireframe.starredPresenter = starredPresenter;
+    starredWireframe.rootWireframe = rootWireframe;
+    starredDataManager.dataStore = dataStore;
+    
     
     UITabBarController *tabBarController = (UITabBarController *)window.rootViewController;
     tabBarController.delegate = self;
