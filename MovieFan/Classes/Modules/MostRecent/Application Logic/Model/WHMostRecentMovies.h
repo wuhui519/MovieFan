@@ -12,6 +12,10 @@
 typedef enum : NSUInteger {
     WHMostRecentMovies_InThreater,
     WHMostRecentMovies_ComingSoon,
+    WHMostRecentMovies_Top250,
+    WHMostRecentMovies_Weekly,
+    WHMostRecentMovies_UsBox,
+    WHMostRecentMovies_NewMovies,
 } WHMostRecentMoviesType;
 
 @class WHRLMMostRecentMovies;

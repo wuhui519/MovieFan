@@ -10,7 +10,7 @@
 #import "WHMostStarredViewInterface.h"
 #import "WHMostStarredModuleInterface.h"
 
-@interface WHMostStarredViewController : UITableViewController<WHMostStarredViewInterface>
+@interface WHMostStarredViewController : UICollectionViewController<WHMostStarredViewInterface>
 
 @property (nonatomic, strong) id<WHMostStarredModuleInterface> eventHandler;
 
